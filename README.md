@@ -2,20 +2,6 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/738be75f-f257-44d1-a8d2-0f26035c2702/deploy-status)](https://app.netlify.com/sites/shady-blog/deploys)
 
-## 🔋 Batteries included
-
-- Nuxt.js (in "universal mode", where both SEO and speed is great)
-- Vue 2
-- Vuex (supported by adding to `/store`, but not implemented)
-- PostCSS (no SCSS)
-- Tailwind
-- PurgeCSS (removes unused CSS-selectors)
-- Dark mode & ColorModePicker (Set to "dark mode first")
-- PWA (install website as standalone app)
-- Netlify CMS (no need for a separate server)
-- Prettier
-- Nuxt-content (w/ exensible support for markdown and code-blocks)
-
 ## Project commands
 
 1. 📦 Install dependencies.
@@ -68,3 +54,17 @@ npm run start
    1. Add/change your font link in `nuxt.config.js` under `head.link`. You can add a `<link rel="stylesheet" href="font.css">` as `link: [{ rel: 'stylesheet', href: 'font.css' }]`, like [this](https://vue-meta.nuxtjs.org/api/#link)
    2. Then append your font name in `tailwind.config.js` under `theme.extend.fontFamily.sans` (or other).
    3. Then if you've uncommented the included netlify plugin "[Subfont](https://github.com/Munter/netlify-plugin-subfont#readme)" in `netlify.toml`, it will automatically post-processes your web page to use an optimal font loading strategy.
+
+## 🔋 Batteries included
+
+- Nuxt.js (in "universal mode", where both SEO and speed is great)
+- Vue 2
+- Vuex (supported by adding to `/store`, but not implemented)
+- PostCSS (no SCSS)
+- Tailwind
+- PurgeCSS (removes unused CSS-selectors)
+- Dark mode & ColorModePicker (Set to "dark mode first")
+- PWA (install website as standalone app)
+- Netlify CMS (no need for a separate server)
+- Prettier
+- Nuxt-content (w/ exensible support for markdown and code-blocks)
