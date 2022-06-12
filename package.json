@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Knogobert/ntn-boilerplate#readme"
+    "url": "git+https://github.com/ModernAmusements/nuxt-ntf-blog.git#readme"
   },
   "license": "MIT",
   "dependencies": {
@@ -33,5 +33,10 @@
     "postcss-preset-env": "^7.4.4",
     "prettier": "^2.6.2",
     "vue-content-placeholders": "^0.2.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ModernAmusements/nuxt-ntf-blog.git/issues"
+  },
+  "homepage": "https://github.com/ModernAmusements/nuxt-ntf-blog.git/tree/readme#readme",
+  "main": "nuxt.config.js"
 }
