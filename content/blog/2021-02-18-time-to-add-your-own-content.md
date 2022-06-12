@@ -1,6 +1,6 @@
 ---
 createdAt: 2021-02-18
-title: Time to add your own content
+title: Es wird Zeit, das die alte Garde der Webentwicklung platz macht!
 description: Remove all of the .md-files in the /content folder and go at it!
 ---
 
