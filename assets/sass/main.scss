@@ -1,0 +1,18 @@
+@import './_vars.sass';
+@import './_transitions.sass';
+@import './_globals.sass';
+
+/* @layer base START */
+@import './_typography.sass';
+@import './_forms.sass';
+@import './_grid.sass';
+@import './_cards.sass';
+/* @layer base END */
+
+/* @layer components START */
+@import './_btns.sass';
+/* @layer components END */
+
+@import 'node_modules/tailwindcss/base.css';
+@import 'node_modules/tailwindcss/components.css';
+@import 'node_modules/tailwindcss/utilities.css';
