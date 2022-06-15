@@ -1,4 +1,4 @@
-@import './_vars.sass';
+@import './_btns.sass';
 @import './_transitions.sass';
 @import './_globals.sass';
 
@@ -12,7 +12,3 @@
 /* @layer components START */
 @import './_btns.sass';
 /* @layer components END */
-
-@import 'node_modules/tailwindcss/base.css';
-@import 'node_modules/tailwindcss/components.css';
-@import 'node_modules/tailwindcss/utilities.css';

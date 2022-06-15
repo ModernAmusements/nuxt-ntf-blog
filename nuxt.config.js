@@ -70,7 +70,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/svg', '@nuxtjs/pwa'],
+  buildModules: ['@nuxtjs/color-mode', '@nuxtjs/svg', '@nuxtjs/pwa'],
   /*
    ** Nuxt.js modules
    */
@@ -91,20 +91,6 @@ export default {
   // ? The content property: https://content.nuxtjs.org/configuration
   content: {
     dir: 'content',
-  },
-  tailwindcss: {
-    viewer: false, // disabled because it causes `Error: Cannot find module 'tailwindcss/resolveConfig'`, fixed in https://github.com/nuxt-community/tailwindcss-module/pull/303
-    cssPath: '~/assets/css/main.scss',
-    exposeConfig: false, // enables `import { theme } from '~tailwind.config'`
-  },
-  purgeCSS: {
-    mode: 'postcss',
-    // ? Safelisting docs: https://purgecss.com/safelisting.html
-    safelist: {
-      // standard: [],
-      deep: [/dark/, /light/, /btn/, /icon/, /main/],
-      greedy: [/^card/, /image$/, /title$/, /^nuxt-content/, /code/, /pre/, /token/, /^vue-content-placeholders/],
-    },
   },
   colorMode: {
     classSuffix: '',
