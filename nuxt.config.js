@@ -66,7 +66,6 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/bootstrap.js', mode: 'client' }],
 
   /*
    ** Nuxt.js dev-modules
