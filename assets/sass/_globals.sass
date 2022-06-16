@@ -1,13 +1,217 @@
 html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  padding: env(safe-area-inset);
+    animation: smoothscroll1 1s;
+    &:focus-within {
+        animation-name: smoothscroll2;
+        scroll-behavior: smooth;
+    }
+}
+
+html,
+body {
+    scroll-padding-top: 8rem;
+    overflow-x: hidden;
+    font-weight: 400;
+    font-family: $font-family-sans-serif;
+    font-variant-ligatures: normal;
+    hyphens: auto;
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--text);
-  @apply transition-colors duration-200 ease-in-out;
+    &:before {
+        @include media-breakpoint-down(md) {
+            content: "mobile";
+        }
+        @include media-breakpoint-up(lg) {
+            content: "desktop";
+        }
+        display: none;
+    }
+}
+
+main {
+    overflow: hidden;
+}
+
+section {
+    margin-bottom: 6rem;
+}
+
+.employees-module-z-location {
+    img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: attr(width) / attr(height);
+    }
+}
+
+.bg-grey {
+    background-color: $gray-500;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.hyphens {
+    hyphens: auto;
+}
+
+.input-group-with-icon {
+    position: relative;
+    i {
+        position: absolute;
+        left: .75rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $gray-600;
+    }
+    .form-control-lg {
+        padding: .5rem 1rem .5rem 2.25rem;
+    }
+}
+
+.captcha {
+    width: 100%;
+    background: $white;
+    border-radius: $border-radius;
+    border: $input-border-width solid $input-border-color;
+    height: 58px;
+    text-align: center;
+    overflow: hidden;
+    img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+
+.btn {
+    i {
+        margin-right: .5rem;
+        margin-top: .4rem;
+    }
+}
+
+.spinner {}
+
+.navbar-toggler:focus {
+    text-decoration: none!important;
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+// hover class
+.lift {
+    transition: box-shadow .25s ease, transform .25s ease
+}
+
+// btn hover class
+.lift:hover,
+.lift:focus {
+    box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1) !important;
+    transform: translate3d(0, -3px, 0)
+}
+
+//
+.bb-none {
+    border-bottom: none!important;
+}
+
+.fa-li {
+    left: -2em;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit;
+}
+
+.btn-same-widht {
+    @include media-breakpoint-down(lg) {
+        min-width: 100%!important;
+    }
+}
+
+// Reverse Rows
+section#row-reverse {
+    .row {
+        flex-direction: row-reverse;
+    }
+}
+
+// Section with no Margin
+section.no-margin {
+    margin-bottom: 0!important;
+}
+
+// Disable Padding on Fluid Containers
+section.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+// lazy loading
+.lazyload {
+    opacity: 0;
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease, filter 0.5s ease;
+    vertical-align: middle;
+    background-color: $primary;
+    filter: blur(5px);
+    &.loaded {
+        opacity: 1;
+        height: auto;
+        filter: blur(0px);
+        background-color: transparent;
+    }
+}
+
+.tunicate-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tunicate-text-wrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.object-hidden {
+    display: none!important;
+}
+
+.object-visible {
+    display: block!important;
+}
+
+.location-module-a {
+    p.info {
+        hyphens: none!important;
+        span {
+            hyphens: none!important;
+            white-space: nowrap!important;
+        }
+    }
+}
+
+.contact-form-module {
+    position: relative;
+    .info {
+        white-space: nowrap;
+    }
+    .category {
+        white-space: nowrap;
+    }
+    .form-check-label {}
+}
+
+
+
+.hamburger-inner {
+  &,
+  &::before,
+  &::after {
+    height: 2px!important;
+  }
 }

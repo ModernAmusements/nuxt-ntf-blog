@@ -1,56 +1,72 @@
 /**
-  * CSS Variables
-  * Blues generated from https://hihayk.github.io/scale/#4/5/80/90/0/0/60/60/526488/82/100/136/black
-  * The CSS Variables are then used in tailwind.config.js so that e.g. `bg-primary-200` can be used.
-  */
+ * Whitelabel SASS
+ *
+ * siehe webpasck.mix.js
+ */
+
 :root {
-  --color-primary-100: #eceff5;
-  /* text-color */
-  --color-primary-200: #fff;
-  /* Border-Hover */
-  --color-primary-300: #f9322c;
-  /* Headline-color */
-  --color-primary-400: #fff;
-  /* Primary */
-  --color-primary: #f9322c;
-  /* Primary */
-  --color-primary-600: #fff;
-  --color-primary-700: #2c3a57;
-  /* BG-Color Primary */
-  --color-primary-800: #77201d;
-  /* BG-Color */
-  --color-primary-900: #000;
-
-  --color-gray-50: #f9fafb;
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-300: #d1d5db;
-  /* Border-Color */
-  --color-gray-400: #fff;
-  --color-gray: #6b7280;
-  --color-gray-600: #4b5563;
-  --color-gray-700: #374151;
-  /* active Color */
-  --color-gray-800: #f9322c;
-  --color-gray-900: #000;
-
-  --text: var(--color-primary-200);
-  --text-secondary: var(--color-primary-400);
-
-  --bg: var(--color-gray-900);
-  --bg-secondary: var(--color-gray-800);
-
-  --border-color: var(--color-primary-400);
-  --border-color-secondary: var(--color-primary);
+    // WL Typo Base
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    // WL Body Global Text Color
+    --bs-body-color: #506690;
 }
 
-.light {
-  --text: var(--color-primary-800);
-  --text-secondary: var(--color-primary-600);
-
-  --bg: var(--color-gray-200);
-  --bg-secondary: var(--color-gray-100);
-
-  --border-color: var(--color-primary);
-  --border-color-secondary: var(--color-primary-600);
-}
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+// Color system
+// scss-docs-start gray-color-variables
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+// scss-docs-end gray-color-variables
+// scss-docs-start color-variables
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #198754 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+// scss-docs-end color-variables
+//=====================================================================================================================================//
+// scss-docs-start theme-color-variables
+$primary: $blue !default;
+$secondary: #506690 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: #F1F4F8 !default;
+$dark: $secondary !default;
+// scss-docs-end theme-color-variables
+//=====================================================================================================================================//
+// Input Style Variables
+$input-border-color: $secondary !default;
+$input-color: $secondary !default;
+$input-placeholder-color: $secondary !default;
+$form-check-input-border: 1px solid $secondary !default;
+$active-background: $secondary!default;
+$active-border: $primary!default;
+$input-plaintext-color: $secondary !default;
+$input-color: $secondary !default;
+// card styles
+$card-border-color: rgba($black, .0);
+// allgemeines SCSS anhängen

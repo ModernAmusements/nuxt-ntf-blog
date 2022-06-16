@@ -66,7 +66,8 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/vue-content-placeholders.js'],
+  plugins: [{ src: '~/plugins/bootstrap.js', mode: 'client' }],
+
   /*
    ** Nuxt.js dev-modules
    */
