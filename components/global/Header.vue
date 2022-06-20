@@ -1,24 +1,81 @@
 <template>
-  <nav class="scrim-bg fixed z-40 top-0 inset-x-0 pt-3 px-3 container mx-auto" aria-label="Main Menu">
-    <ul class="flex">
-      <li class="flex-none w-15 mr-10">
-        <nuxt-link class="btn block" to="/">Home</nuxt-link>
-      </li>
-      <li class="flex-1 ml-10">
-        <nuxt-link class="btn block" to="/blog">Blog</nuxt-link>
-      </li>
-      <li class="flex-1 ml-10">
-        <nuxt-link class="btn block" to="/projects">Projects</nuxt-link>
-      </li>
-    </ul>
+  <nav
+    class="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg shadow scrim-bg">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <nuxt-link to="/">
+          <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap">
+            Mondern Amusements
+          </a>
+        </nuxt-link>
+        <button
+          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          type="button" v-on:click="setNavbarOpen">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="lg:flex flex-grow items-center" :class="[navbarOpen ? 'block' : 'hidden']"
+        id="example-navbar-warning">
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+
+          <li class="flex items-center">
+            <index-dropdown />
+          </li>
+
+          <li class="flex items-center">
+            <a class="px-3 py-2 flex items-center text-xs uppercase font-bold" href="" target="_blank">
+              <i class="text-blueGray-400 fab fa-instagram text-lg leading-lg" />
+              <span class="lg:hidden inline-block ml-2">Share</span>
+            </a>
+          </li>
+
+          <li class="flex items-center">
+            <a class="px-3 py-2 flex items-center text-xs uppercase font-bold" href="" target="_blank">
+              <i class="text-blueGray-400 fab fa-twitter text-lg leading-lg" />
+              <span class="lg:hidden inline-block ml-2">Tweet</span>
+            </a>
+          </li>
+
+          <li class="flex items-center">
+            <a class="px-3 py-2 flex items-center text-xs uppercase font-bold" href="" target="_blank">
+              <i class="text-blueGray-400 fab fa-github text-lg leading-lg" />
+              <span class="lg:hidden inline-block ml-2">Star</span>
+            </a>
+          </li>
+
+          <li class="flex items-center">
+            <button
+              class="text-xs font-bold  px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+              type="button">
+              Get in Contact
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </template>
 
 <script>
+import IndexDropdown from "@/components/Dropdowns/IndexDropdown.vue";
+
 export default {
-  name: "Header",
+  data() {
+    return {
+      navbarOpen: false,
+    };
+  },
+  methods: {
+    setNavbarOpen: function () {
+      this.navbarOpen = !this.navbarOpen;
+    },
+  },
+  components: {
+    IndexDropdown,
+  },
 };
 </script>
+
 
 <style lang="postcss" scoped>
 .scrim-bg {
@@ -35,7 +92,7 @@ export default {
 }
 
 .light {
-  & .scrim-bg {
+  &.scrim-bg {
     &::after {
       animation-name: fadeIn2;
       background: linear-gradient(to bottom,
@@ -45,7 +102,7 @@ export default {
     }
   }
 
-  & .nuxt-link-exact-active {
+  &.nuxt-link-exact-active {
     @apply text-primary-700 border-gray-600 bg-gray-100;
   }
 }
