@@ -8,8 +8,6 @@ export default {
 };
 </script>
 
-
-
 <template>
   <nav class="scrim-bg fixed z-40 top-0 inset-x-0 pt-3 px-3" aria-label="Main Menu">
     <Logo />
