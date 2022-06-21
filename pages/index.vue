@@ -1,16 +1,10 @@
 <template>
   <main>
-    <section class="self-center flex flex-col flex-1 items-center justify-center">
-      <svg viewBox="0 0 482 412" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M7.11365 294.217C3.79882 295.763 0 293.343 0 289.685V228.023C0 226.056 1.15376 224.271 2.94783 223.464L143.795 160.07C150.742 156.86 158.036 154.186 165.677 152.047V152.047C168.903 151.143 168.94 144.785 165.677 144.023V144.023C158.036 141.884 150.742 139.209 143.795 136L2.94783 72.6059C1.15376 71.7984 0 70.0138 0 68.0464V5.83363C0 2.17988 3.79127 -0.239993 7.10533 1.29848L236.764 107.912C238.53 108.732 239.659 110.501 239.659 112.447V182.559C239.659 184.502 238.533 186.269 236.773 187.091L7.11365 294.217Z"
-          fill="#F9322C" />
-        <path
-          d="M236.921 412C234.16 412 231.921 409.761 231.921 407V342.116C231.921 339.355 234.16 337.116 236.921 337.116H477C479.761 337.116 482 339.355 482 342.116V407C482 409.761 479.761 412 477 412H236.921Z"
-          fill="#F9322C" />
-      </svg>
-      <h1 class="title mt-8 text-center">Shady Tawfik</h1>
-      <h2 class="subtitle text-center">Blog</h2>
+    <section class="self-center flex flex-row flex-1 items-center justify-center">
+      <div class="hero-logo">
+        <Logo />
+      </div>
+      <h1 class="text-center ml-5">modernAmusements</h1>
     </section>
 
     <section class="mt-8">
@@ -21,3 +15,10 @@
     </section>
   </main>
 </template>
+
+<style>
+hero-logo+logo {
+  width: 100%;
+  height: auto;
+}
+</style>
