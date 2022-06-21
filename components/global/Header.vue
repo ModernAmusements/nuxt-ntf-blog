@@ -1,9 +1,13 @@
 <script>
 import Logo from "@/components/global/navbar/Logo.vue";
+import Social from "@/components/global/navbar/Social.vue";
+import Navbar from "@/components/global/navbar/Navbar.vue";
 export default {
   name: "Header",
   components: {
     Logo,
+    Social,
+    Navbar
   },
 };
 </script>
@@ -11,20 +15,14 @@ export default {
 
 <template>
   <nav class="scrim-bg fixed z-40 top-0 inset-x-0 py-3 px-3" aria-label="Main Menu">
+    <!-- ma logo -->
     <nuxt-link class="logo-link" alt="Modern Amusment Logo" to="/">
       <Logo />
     </nuxt-link>
-    <ul class="flex">
-      <li class="flex-1">
-        <nuxt-link class="btn block" to="/">Home</nuxt-link>
-      </li>
-      <li class="flex-1 ml-2">
-        <nuxt-link class="btn block" to="/blog">Blog</nuxt-link>
-      </li>
-      <li class="flex-1 ml-2">
-        <nuxt-link class="btn block" to="/projects">Projects</nuxt-link>
-      </li>
-    </ul>
+    <!-- Navigation -->
+    <Navbar />
+    <!-- Nav Social -->
+    <Social />
   </nav>
 </template>
 
@@ -43,6 +41,7 @@ nav {
   cursor: pointer !important;
 }
 
+
 .scrim-bg {
   &::before {
     content: "";
@@ -54,7 +53,7 @@ nav {
 }
 
 .nuxt-link-exact-active {
-  @apply text-gray-200 border-gray-400 bg-gray-800 bg-opacity-25 cursor-default;
+  @apply text-primary font-bold cursor-default;
 }
 
 .light {
