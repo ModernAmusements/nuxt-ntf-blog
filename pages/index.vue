@@ -8,7 +8,7 @@
     </section>
 
     <section class="mt-8">
-      <h3 class="text-primary-600 dark:text-primary-400 max-w-5xl mx-auto uppercase">
+      <h3 class="text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">
         Latest blog post
       </h3>
       <posts post-type="blog" :amount="3" />
@@ -17,8 +17,4 @@
 </template>
 
 <style>
-hero-logo+logo {
-  width: 100%;
-  height: auto;
-}
 </style>
