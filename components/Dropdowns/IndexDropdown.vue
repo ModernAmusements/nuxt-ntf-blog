@@ -1,6 +1,7 @@
 <template>
   <div>
-    <a class="px-3 py-2 flex items-center text-xs font-bold" ref="btnDropdownRef" v-on:click="toggleDropdown($event)">
+    <a href="#maBolg" class="px-3 py-2 flex items-center text-xs font-bold" ref="btnDropdownRef"
+      v-on:click="toggleDropdown($event)">
       Pages
     </a>
     <div ref="popoverDropdownRef" class="text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
