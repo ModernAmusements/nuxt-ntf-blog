@@ -10,7 +10,7 @@ export default {
 
 
 <template>
-  <nav class="scrim-bg fixed z-40 top-0 inset-x-0 pt-3 px-3" aria-label="Main Menu">
+  <nav class="scrim-bg fixed z-40 top-0 inset-x-0 py-3 px-3" aria-label="Main Menu">
     <nuxt-link class="logo-link" alt="Modern Amusment Logo" to="/">
       <Logo />
     </nuxt-link>
@@ -35,6 +35,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid var(--color-gray-400);
 }
 
 .logo-link {
@@ -46,8 +47,9 @@ nav {
   &::before {
     content: "";
     z-index: -1;
-    background-color: var(--bg);
-    @apply absolute bottom-0 inset-x-0 h-12 mb-4 transition-colors duration-200 ease-in-out;
+    background-color: var(--bg-transparent);
+    backdrop-filter: blur(12px);
+    @apply absolute bottom-0 inset-x-0 h-20 transition-colors duration-200 ease-in-out;
   }
 }
 
