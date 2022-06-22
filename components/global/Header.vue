@@ -2,12 +2,14 @@
 import Logo from "@/components/global/navbar/Logo.vue";
 import Social from "@/components/global/navbar/Social.vue";
 import Navbar from "@/components/global/navbar/Navbar.vue";
+import CTA from "@/components/global/navbar/CTA";
 export default {
   name: "Header",
   components: {
     Logo,
     Social,
-    Navbar
+    Navbar,
+    CTA
   },
 };
 </script>
@@ -21,8 +23,12 @@ export default {
     </nuxt-link>
     <!-- Navigation -->
     <Navbar />
-    <!-- Nav Social -->
-    <Social />
+    <section>
+      <!-- CTA -->
+      <CTA />
+      <!-- Nav Social -->
+      <Social />
+    </section>
   </nav>
 </template>
 
@@ -34,6 +40,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--color-gray-400);
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .logo-link {
