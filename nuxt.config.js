@@ -132,15 +132,15 @@ export default {
   },
   pwa: {
     icon: {
-      source: 'static/icon.png',
-      filename: 'icon.png',
+      source: 'static/mondern_amusement.png',
+      filename: 'mondern_amusement.png',
     },
     manifest: { name: SITE_INFO.sitename || process.env.npm_package_name || '', lang: process.env.lang },
     meta: {
       name: SITE_INFO.sitename || process.env.npm_package_name || '',
       lang: process.env.lang,
       ogHost: process.env.URL,
-      ogImage: '/preview.jpg',
+      ogImage: 'static/mondern_amusement.png',
     },
   },
 }
