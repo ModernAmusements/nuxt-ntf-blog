@@ -1,10 +1,11 @@
 <template>
   <main>
-    <section class="self-center flex flex-row flex-1 items-center justify-center">
-      <div class="hero-logo">
-        <Logo />
+    <section class="self-center flex flex-col flex-1 items-center justify-center">
+      <div class="hero-logo mb-10">
+        <HomepageLogo />
       </div>
-      <h1 class="text-center ml-5">modernAmusements</h1>
+      <h1 class="text-center ml-3">Shady Tawfik</h1>
+      <h3 class="text-center">compiling ideas into =>> code</h3>
     </section>
 
     <section class="mt-8">

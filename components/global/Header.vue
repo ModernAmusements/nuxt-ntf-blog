@@ -1,14 +1,14 @@
 <script>
 import Logo from "@/components/global/navbar/Logo.vue";
 import Social from "@/components/global/navbar/Social.vue";
-import Navbar from "@/components/global/navbar/Navbar.vue";
+import Navigation from "@/components/global/navbar/Navigation.vue";
 import CTA from "@/components/global/navbar/CTA";
 export default {
   name: "Header",
   components: {
     Logo,
     Social,
-    Navbar,
+    Navigation,
     CTA
   },
 };
@@ -22,7 +22,7 @@ export default {
       <Logo />
     </nuxt-link>
     <!-- Navigation -->
-    <Navbar />
+    <Navigation />
     <section>
       <!-- CTA -->
       <CTA />

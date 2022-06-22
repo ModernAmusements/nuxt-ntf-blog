@@ -2,9 +2,8 @@ import postcssPresetEnv from 'postcss-preset-env'
 import postcssEasingGradients from 'postcss-easing-gradients'
 import * as SITE_INFO from './content/site/info.json'
 import { COLOR_MODE_FALLBACK } from './utils/globals.js'
-import { defineNuxtConfig } from 'nuxt'
 
-export default defineNuxtConfig({
+export default {
   target: 'static',
   components: true,
   generate: {
@@ -144,4 +143,4 @@ export default defineNuxtConfig({
       ogImage: 'static/mondern_amusement.png',
     },
   },
-})
+}
