@@ -5,7 +5,7 @@
 
 <template>
 	<!-- Navigation -->
-	<ul class="flex">
+	<ul class="hidden md:flex">
 		<li class="flex-1">
 			<nuxt-link class="hidden md:block" to="/">Home</nuxt-link>
 		</li>

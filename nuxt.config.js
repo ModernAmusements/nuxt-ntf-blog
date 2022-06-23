@@ -15,7 +15,7 @@ export default {
       process.env.NODE_ENV === 'production'
         ? process.env.URL || 'http://createADotEnvFileAndSetURL'
         : 'http://localhost:3000',
-    lang: SITE_INFO.sitelang || 'en-US',
+    lang: SITE_INFO.sitelang || 'de-DE',
   },
   /*
    ** Headers of the page
@@ -132,15 +132,15 @@ export default {
   },
   pwa: {
     icon: {
-      source: 'static/mondern_amusement.png',
-      filename: 'mondern_amusement.png',
+      source: 'static/preview.png',
+      filename: 'preview',
     },
     manifest: { name: SITE_INFO.sitename || process.env.npm_package_name || '', lang: process.env.lang },
     meta: {
       name: SITE_INFO.sitename || process.env.npm_package_name || '',
       lang: process.env.lang,
       ogHost: process.env.URL,
-      ogImage: 'static/mondern_amusement.png',
+      ogImage: 'static/preview-meta.jpg',
     },
   },
 }

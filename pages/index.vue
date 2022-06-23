@@ -1,9 +1,6 @@
 <template>
   <main>
     <section class="self-center flex flex-col flex-1 items-center justify-center">
-      <div class="hero-logo mb-10">
-        <HomepageLogo />
-      </div>
       <h1 class="text-center ml-3">Shady Tawfik</h1>
       <h3 class="text-center">compiling ideas into =>> code</h3>
     </section>
