@@ -3,23 +3,15 @@ import Logo from "@/components/global/navbar/Logo.vue";
 import Social from "@/components/global/navbar/Social.vue";
 import Navigation from "@/components/global/navbar/Navigation.vue";
 import CTA from "@/components/global/navbar/CTA";
+import SidebarMenu from "@/components/global/navbar/SidebarMenu"
 export default {
   name: "Header",
   components: {
     Logo,
     Social,
     Navigation,
-    CTA
-  },
-  data() {
-    return {
-      navbarOpen: false,
-    };
-  },
-  methods: {
-    setNavbarOpen: function () {
-      this.navbarOpen = !this.navbarOpen;
-    },
+    CTA,
+    SidebarMenu,
   },
 };
 </script>
@@ -27,47 +19,12 @@ export default {
 
 <template>
   <nav class="scrim-bg fixed z-40 top-0 inset-x-0 py-3 px-3" aria-label="Main Menu">
-    <!-- Left -->
-    <!-- ma logo -->
-    <nuxt-link class="logo-link" alt="Modern Amusment Logo" to="/">
+    <div class="ml-20">
       <Logo />
-    </nuxt-link>
-    <!-- Left -->
-    <!-- Right -->
-    <Navigation />
+    </div>
+    <SidebarMenu />
     <section>
-      <!-- CTA -->
-      <CTA />
-      <!-- CTA -->
-      <!-- Burger Menu -->
-      <button class="cursor-pointer btn block md:hidden mx-3" type="button" v-on:click="setNavbarOpen">
-        <i class="fas fa-bars"></i>
-      </button>
-      <!-- Burger Menu -->
-      <!-- Navigation -->
-      <div
-        class="md:hidden menu-mobile fixed  left-0 w-auto h-full overflow-auto pointer-events-auto min-h-fill-available border-r primary-bg"
-        :class="[navbarOpen ? 'flex' : 'hidden']">
-        <!-- Mobile Nav Item -->
-        <ul class="flex flex-row list-none mr-auto">
-          <li class="flex flex-col items-center">
-            <nuxt-link class="px-3 py-2 items-start text-xs" to="/home">Home
-            </nuxt-link>
-            <nuxt-link class="px-3 py-2 items-start text-xs" to="/blog">Blog
-            </nuxt-link>
-            <nuxt-link class="px-3 py-2 items-start text-xs" to="/projects">Projects
-            </nuxt-link>
-            <nuxt-link class="px-3 py-2 items-start text-xs" to="/#">About
-            </nuxt-link>
-          </li>
-        </ul>
-        <!-- Mobile Nav Item -->
-      </div>
-      <!-- Navigation -->
-      <!-- Nav Social -->
       <Social />
-      <!-- Nav Social -->
-      <!-- Right -->
     </section>
   </nav>
 </template>

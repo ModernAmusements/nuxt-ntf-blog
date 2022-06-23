@@ -9,7 +9,7 @@
 		<li class="flex items-center">
 			<a class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
 				href="#" target="_blank">
-				<i class="text-blueGray-400 fab fa-twitter text-lg leading-lg" />
+				<i class='bx bxl-twitter bx-sm'></i>
 			</a>
 		</li>
 		<!-- Twitter-->
@@ -17,7 +17,7 @@
 		<li class="flex items-center">
 			<a class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
 				href="#" target="_blank">
-				<i class="text-blueGray-400 fab fa-github text-lg leading-lg" />
+				<i class='bx bxl-github bx-sm'></i>
 			</a>
 		</li>
 		<!-- Github-->
