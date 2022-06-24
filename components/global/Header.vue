@@ -1,13 +1,15 @@
 <script>
-import Logo from "@/components/global/navbar/Logo.vue";
-import Social from "@/components/global/navbar/Social.vue";
+import Logo from "@/components/global/navbar/Logo.vue"
+import Social from "@/components/global/navbar/Social.vue"
 import SidebarMenu from "@/components/global/navbar/SidebarMenu"
+import CTA from "@/components/global/navbar/CTA"
 export default {
   name: "Header",
   components: {
     Logo,
     Social,
     SidebarMenu,
+    CTA
   },
 };
 </script>
@@ -15,11 +17,12 @@ export default {
 
 <template>
   <nav class="scrim-bg fixed z-40 top-0 inset-x-0 py-3 px-3" aria-label="Main Menu">
-    <div class="ml-20">
+    <div class="nav-logo">
       <Logo />
     </div>
     <SidebarMenu />
     <section>
+      <CTA />
       <Social />
     </section>
   </nav>
@@ -33,6 +36,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--color-gray-400);
+}
+
+.nav-logo {
+  margin-left: 3rem;
 }
 
 section {

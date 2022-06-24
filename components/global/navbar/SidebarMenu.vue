@@ -1,19 +1,28 @@
 <template>
+  <!-- SibebarMenuComp -->
+  <!-- Check if SB is opened = has class open ->> add cssVars -->
   <div class="sidebar" :class="isOpened ? 'open' : ''" :style="cssVars">
-    <div class="logo-details" style="margin: 6px 14px 0 14px;">
+    <!-- MA Logo inside Sidebar -->
+    <div class="logo-details">
       <Logo class="menu-logo icon" />
+      <!-- change menu icon if is opened -->
       <i class="bx" :class="isOpened ? 'bx-menu-alt-right' : 'bx-menu'" id="btn" @click="isOpened = !isOpened" />
     </div>
+    <!-- Menu Content -->
     <div
       style="display: flex ; flex-direction:column; justify-content: space-between; flex-grow: 1; max-height: calc(100% - 60px); ">
-      <div id="my-scroll" style="margin: 6px 14px 0 14px;">
+      <div id="my-scroll">
+        <!-- Menu Content -->
         <ul class="nav-list" style="overflow: visible;">
+          <!-- Items -->
           <span v-for="(menuItem, index) in menuItems" :key="index">
             <li>
               <nuxt-link :to="menuItem.link">
                 <i class="bx" :class="menuItem.icon || 'bx-square-rounded'" />
+                <!-- Link Name -->
                 <span class="links_name">{{ menuItem.name }}</span>
               </nuxt-link>
+              <!-- tool -->
               <span class="tooltip">{{ menuItem.tooltip || menuItem.name }}</span>
             </li>
           </span>
@@ -42,7 +51,7 @@ export default {
     },
     menuClosedPaddingLeftBody: {
       type: String,
-      default: '78px'
+      default: '50px'
     },
     //! Menu items
     menuItems: {
@@ -156,7 +165,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="postcss">
 .menu-logo {
   width: 30px;
   margin: 0 10px 0 10px;
@@ -172,7 +181,7 @@ export default {
   height: 100%;
   min-height: min-content;
   /* overflow-y: auto; */
-  width: 78px;
+  width: 50px;
   background-color: var(--bg-transparent);
   backdrop-filter: blur(12px);
   /* padding: 6px 14px 0 14px; */
@@ -182,7 +191,7 @@ export default {
 }
 
 .sidebar.open {
-  width: 267px;
+  width: 235px;
 }
 
 .sidebar .logo-details {
@@ -254,10 +263,10 @@ export default {
   top: -20px;
   left: calc(100% + 15px);
   z-index: 3;
-  background: var(--items-tooltip-color);
+  background: var(--text);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   padding: 6px 12px;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   font-size: 15px;
   font-weight: 400;
   opacity: 0;
@@ -278,44 +287,7 @@ export default {
   display: none;
 }
 
-.sidebar input {
-  font-size: 15px;
-  color: var(--serach-input-text-color);
-  font-weight: 400;
-  outline: none;
-  height: 50px;
-  width: 100%;
-  width: 50px;
-  border: none;
-  border-radius: 12px;
-  transition: all 0.5s ease;
-  background: var(--secondary-color);
-}
 
-.sidebar.open input {
-  padding: 0 20px 0 50px;
-  width: 100%;
-}
-
-.sidebar .bx-search {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  font-size: 22px;
-  background: var(--secondary-color);
-  color: var(--icons-color);
-}
-
-.sidebar.open .bx-search:hover {
-  background: var(--secondary-color);
-  color: var(--icons-color);
-}
-
-.sidebar .bx-search:hover {
-  background: var(--menu-items-hover-color);
-  color: var(--bg-color);
-}
 
 .sidebar li a {
   display: flex;
@@ -329,11 +301,15 @@ export default {
 }
 
 .sidebar li a:hover {
-  background: var(--menu-items-hover-color);
+  @apply border-primary-300 bg-primary-800 text-white;
+  border-radius: 0.25rem;
 }
 
+
+
+
 .sidebar li a .links_name {
-  color: var(--menu-items-text-color);
+  color: var(--text);
   font-size: 15px;
   font-weight: 400;
   white-space: nowrap;
@@ -350,14 +326,14 @@ export default {
 .sidebar li a:hover .links_name,
 .sidebar li a:hover i {
   transition: all 0.5s ease;
-  color: var(--bg-color);
+  color: var(--text);
 }
 
 .sidebar li i {
   height: 50px;
   line-height: 50px;
   font-size: 18px;
-  border-radius: 12px;
+  border-radius: 0.25rem;
 }
 
 .sidebar div.profile {
@@ -382,13 +358,6 @@ export default {
   flex-wrap: nowrap;
 }
 
-.sidebar div img {
-  height: 45px;
-  width: 45px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-right: 10px;
-}
 
 .sidebar div.profile .name,
 .sidebar div.profile .job {
@@ -398,41 +367,7 @@ export default {
   white-space: nowrap;
 }
 
-.sidebar div.profile .job {
-  font-size: 12px;
-}
 
-.sidebar .profile #log_out {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  background: var(--secondary-color);
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 0px;
-  transition: all 0.5s ease;
-}
-
-.sidebar.open .profile #log_out {
-  width: 50px;
-  background: var(--secondary-color);
-  opacity: 0;
-}
-
-.sidebar.open .profile:hover #log_out {
-  opacity: 1;
-}
-
-.sidebar.open .profile #log_out:hover {
-  opacity: 1;
-  color: red;
-}
-
-.sidebar .profile #log_out:hover {
-  color: red;
-}
 
 .home-section {
   position: relative;
@@ -461,6 +396,8 @@ export default {
 .my-scroll-active {
   overflow-y: auto;
 }
+
+
 
 #my-scroll {
   overflow-y: auto;

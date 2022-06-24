@@ -5,7 +5,8 @@
 
 <template>
 	<!-- CTA -->
-	<nuxt-link class="btn block mx-3" to="#"><span class="hidden md:inline-block">Get in</span> Contact</nuxt-link>
+	<nuxt-link class="btn block mx-1 md:mx-2" to="#"><span class="hidden md:inline-block">Get in</span> Contact
+	</nuxt-link>
 	<!-- CTA -->
 </template>
 

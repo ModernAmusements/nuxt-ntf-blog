@@ -7,16 +7,15 @@
 	<ul class="flex">
 		<!-- Twitter-->
 		<li class="flex items-center">
-			<a class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
-				href="#" target="_blank">
+			<a class="text-blueGray-700 px-1 md:px-2 py-2 flex items-center text-xs uppercase font-bold" href="#"
+				target="_blank">
 				<i class='bx bxl-twitter bx-sm'></i>
 			</a>
 		</li>
 		<!-- Twitter-->
 		<!-- Github-->
 		<li class="flex items-center">
-			<a class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
-				href="#" target="_blank">
+			<a class="px-1 md:px-2 py-2 flex items-center text-xs uppercase font-bold" href="#" target="_blank">
 				<i class='bx bxl-github bx-sm'></i>
 			</a>
 		</li>
