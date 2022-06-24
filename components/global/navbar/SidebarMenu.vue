@@ -29,6 +29,9 @@
         </ul>
       </div>
     </div>
+    <div class="info text-sm" :class="isOpened ? 'justify-end pl-5' : 'justify-center'">
+      <p>Shady Tawfik 2022©</p>
+    </div>
   </div>
 </template>
 
@@ -41,9 +44,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    // move body
     isPaddingLeft: {
       type: Boolean,
-      default: true,
+      default: false,
     },
     menuOpenedPaddingLeftBody: {
       type: String,
@@ -90,51 +94,10 @@ export default {
       ],
     },
 
-    //! Styles
-    bgColor: {
-      type: String,
-      default: '#11101d',
-    },
-    secondaryColor: {
-      type: String,
-      default: '#1d1b31',
-    },
-    homeSectionColor: {
-      type: String,
-      default: '#e4e9f7',
-    },
-    logoTitleColor: {
-      type: String,
-      default: '#fff',
-    },
-    iconsColor: {
-      type: String,
-      default: '#fff',
-    },
-    itemsTooltipColor: {
-      type: String,
-      default: '#e4e9f7',
-    },
-    searchInputTextColor: {
-      type: String,
-      default: '#fff',
-    },
-    menuItemsHoverColor: {
-      type: String,
-      default: '#fff',
-    },
-    menuItemsTextColor: {
-      type: String,
-      default: '#fff',
-    },
-    menuFooterTextColor: {
-      type: String,
-      default: '#fff',
-    },
   },
   data() {
     return {
-      isOpened: true
+      isOpened: false
     }
   },
   mounted() {
@@ -144,7 +107,6 @@ export default {
     cssVars() {
       return {
         // '--padding-left-body': this.isOpened ? this.menuOpenedPaddingLeftBody : this.menuClosedPaddingLeftBody,
-        '--bg-color': this.bgColor,
         '--secondary-color': this.secondaryColor,
         '--home-section-color': this.homeSectionColor,
         '--logo-title-color': this.logoTitleColor,
@@ -254,8 +216,8 @@ export default {
 
 .sidebar li {
   position: relative;
-  margin: 8px 0;
   list-style: none;
+  margin: 8px 10px 0 10px;
 }
 
 .sidebar li .tooltip {
@@ -263,7 +225,7 @@ export default {
   top: -20px;
   left: calc(100% + 15px);
   z-index: 3;
-  background: var(--text);
+  color: var(--text);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   padding: 6px 12px;
   border-radius: 0.25rem;
@@ -297,15 +259,12 @@ export default {
   align-items: center;
   text-decoration: none;
   transition: all 0.4s ease;
-  background: var(--bg-color);
 }
 
 .sidebar li a:hover {
   @apply border-primary-300 bg-primary-800 text-white;
   border-radius: 0.25rem;
 }
-
-
 
 
 .sidebar li a .links_name {
@@ -334,70 +293,28 @@ export default {
   line-height: 50px;
   font-size: 18px;
   border-radius: 0.25rem;
-}
-
-.sidebar div.profile {
+  right: 10px;
   position: relative;
-  height: 60px;
-  width: 78px;
-  /* left: 0;
-    bottom: 0; */
-  padding: 10px 14px;
-  background: var(--secondary-color);
-  transition: all 0.5s ease;
-  overflow: hidden;
-}
-
-.sidebar.open div.profile {
-  width: 267px;
-}
-
-.sidebar div .profile-details {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-
-.sidebar div.profile .name,
-.sidebar div.profile .job {
-  font-size: 15px;
-  font-weight: 400;
-  color: var(--menu-footer-text-color);
-  white-space: nowrap;
-}
-
-
-
-.home-section {
-  position: relative;
-  background: var(--home-section-color);
-  min-height: 100vh;
-  top: 0;
-  left: 78px;
-  width: calc(100% - 78px);
-  transition: all 0.5s ease;
-  z-index: 2;
-}
-
-.sidebar.open~.home-section {
-  left: 250px;
-  width: calc(100% - 250px);
-}
-
-.home-section .text {
-  display: inline-block;
-  color: var(--bg-color);
-  font-size: 25px;
-  font-weight: 500;
-  margin: 18px;
 }
 
 .my-scroll-active {
   overflow-y: auto;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  flex-grow: 1;
+  padding-top: 1rem;
+}
 
+.sidebar.open~.info {
+  align-items: flex-end;
+}
 
 #my-scroll {
   overflow-y: auto;
@@ -406,21 +323,8 @@ export default {
 
 #my-scroll::-webkit-scrollbar {
   display: none;
-  /* background-color: rgba(255, 255, 255, 0.2); 
-    width: 10px;
-    border-radius:5px  */
 }
 
-/* #my-scroll::-webkit-scrollbar-thumb{
-    background-color: red;
-    border-radius:5px 
-  }
-  #my-scroll::-webkit-scrollbar-button:vertical:start:decrement{
-    display:none;
-  }
-  #my-scroll::-webkit-scrollbar-button:vertical:end:increment{
-    display:none;
-  } */
 @media (max-width: 420px) {
   .sidebar li .tooltip {
     display: none;
