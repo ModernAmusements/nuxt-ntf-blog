@@ -1,16 +1,12 @@
 <script>
 import Logo from "@/components/global/navbar/Logo.vue";
 import Social from "@/components/global/navbar/Social.vue";
-import Navigation from "@/components/global/navbar/Navigation.vue";
-import CTA from "@/components/global/navbar/CTA";
 import SidebarMenu from "@/components/global/navbar/SidebarMenu"
 export default {
   name: "Header",
   components: {
     Logo,
     Social,
-    Navigation,
-    CTA,
     SidebarMenu,
   },
 };

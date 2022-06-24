@@ -15,5 +15,4 @@
 </template>
 
 <style>
-@import url('https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css');
 </style>

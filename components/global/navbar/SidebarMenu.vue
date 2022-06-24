@@ -157,13 +157,6 @@ export default {
 </script>
 
 <style>
-@import url('https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css');
-
-
-body {
-  transition: all 0.5s ease;
-}
-
 .menu-logo {
   width: 30px;
   margin: 0 10px 0 10px;
