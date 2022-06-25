@@ -1,16 +1,10 @@
 <script>
-import Social from "@/components/global/navbar/Social.vue"
-import Cta from "@/components/global/navbar/Cta"
 export default {
   name: "Footer",
   data() {
     return {
       date: new Date().getFullYear(),
     };
-  },
-  components: {
-    Social,
-    Cta
   },
 };
 </script>
