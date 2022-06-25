@@ -2,14 +2,14 @@
 import Logo from "@/components/global/navbar/Logo.vue"
 import Social from "@/components/global/navbar/Social.vue"
 import SidebarMenu from "@/components/global/navbar/SidebarMenu"
-import CTA from "@/components/global/navbar/CTA"
+import Cta from "@/components/global/navbar/Cta"
 export default {
   name: "Header",
   components: {
     Logo,
     Social,
     SidebarMenu,
-    CTA
+    Cta
   },
 };
 </script>
@@ -22,7 +22,7 @@ export default {
     </div>
     <SidebarMenu />
     <section>
-      <CTA />
+      <Cta />
       <Social />
     </section>
   </nav>

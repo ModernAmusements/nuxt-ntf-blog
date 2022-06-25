@@ -5,14 +5,15 @@
 
 <template>
 	<!-- CTA -->
-	<nuxt-link class="btn block mx-1 md:mx-2" to="#"><span class="hidden md:inline-block">Get in</span> Contact
-	</nuxt-link>
+	<a class="btn block mr-1 md:mr-2" href="mailto:shadynathantawfik@gmail.com">
+		<span class="hidden md:inline-block">Get in</span> Contact
+	</a>
 	<!-- CTA -->
 </template>
 
 <script>
 export default {
-	name: 'CTA',
+	name: 'Cta',
 }
 </script>
 

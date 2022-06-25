@@ -22,15 +22,13 @@
                 <!-- Link Name -->
                 <span class="links_name">{{ menuItem.name }}</span>
               </nuxt-link>
-              <!-- tool -->
-              <span class="tooltip">{{ menuItem.tooltip || menuItem.name }}</span>
             </li>
           </span>
         </ul>
       </div>
     </div>
     <div class="info text-sm" :class="isOpened ? 'justify-end pl-5' : 'justify-center'">
-      <p>Shady Tawfik 2022©</p>
+      <p>ModernAmusement by Shady Tawfik</p>
     </div>
   </div>
 </template>
@@ -64,32 +62,28 @@ export default {
         {
           link: '/',
           name: 'Home',
-          tooltip: 'Home',
           icon: 'bx-home',
         },
         {
           link: '/blog',
           name: 'Blog',
-          tooltip: 'Blog',
+
           icon: 'bx-edit',
         },
         {
           link: '/projects',
           name: 'Projects',
-          tooltip: 'Projects',
           icon: 'bx-code',
         },
         {
           link: '#',
-          name: 'About',
-          tooltip: 'Abput',
-          icon: 'bx-user',
+          name: 'Snippets',
+          icon: 'bxs-component',
         },
         {
           link: '#',
-          name: 'Component',
-          tooltip: 'Files',
-          icon: 'bxs-component',
+          name: 'About',
+          icon: 'bx-user',
         },
       ],
     },
@@ -111,7 +105,6 @@ export default {
         '--home-section-color': this.homeSectionColor,
         '--logo-title-color': this.logoTitleColor,
         '--icons-color': this.iconsColor,
-        '--items-tooltip-color': this.itemsTooltipColor,
         '--serach-input-text-color': this.searchInputTextColor,
         '--menu-items-hover-color': this.menuItemsHoverColor,
         '--menu-items-text-color': this.menuItemsTextColor,
@@ -220,36 +213,6 @@ export default {
   margin: 8px 10px 0 10px;
 }
 
-.sidebar li .tooltip {
-  position: absolute;
-  top: -20px;
-  left: calc(100% + 15px);
-  z-index: 3;
-  color: var(--text);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  padding: 6px 12px;
-  border-radius: 0.25rem;
-  font-size: 15px;
-  font-weight: 400;
-  opacity: 0;
-  white-space: nowrap;
-  pointer-events: none;
-  transition: 0s;
-}
-
-.sidebar li:hover .tooltip {
-  opacity: 1;
-  pointer-events: auto;
-  transition: all 0.4s ease;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.sidebar.open li .tooltip {
-  display: none;
-}
-
-
 
 .sidebar li a {
   display: flex;
@@ -326,7 +289,7 @@ export default {
 }
 
 @media (max-width: 420px) {
-  .sidebar li .tooltip {
+  .sidebar li #tolltip {
     display: none;
   }
 }
