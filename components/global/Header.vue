@@ -1,10 +1,6 @@
 <script>
-import Cta from "@/components/global/navbar/Cta.vue"
 export default {
   name: "Header",
-  components: {
-    Cta
-  },
 };
 </script>
 
