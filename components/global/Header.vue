@@ -1,5 +1,5 @@
 <script>
-import Cta from "@/components/global/navbar/Cta"
+import Cta from "/components/global/navbar/Cta"
 export default {
   name: "Header",
   components: {
