@@ -12,7 +12,9 @@ export default {
     </div>
     <SidebarMenu />
     <section>
-      <Cta />
+      <a class="btn block mr-1 md:mr-2" href="mailto:shadynathantawfik@gmail.com">
+        <span class="hidden md:inline-block">Get in</span> Contact
+      </a>
       <Social />
     </section>
   </nav>
@@ -30,6 +32,14 @@ nav {
 
 .nav-logo {
   margin-left: 3rem;
+}
+
+li.flex-1 {
+  padding: 0 1rem;
+}
+
+.nuxt-link-exact-active {
+  @apply text-primary font-bold cursor-default;
 }
 
 section {

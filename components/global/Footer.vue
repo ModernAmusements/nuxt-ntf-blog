@@ -18,7 +18,9 @@ export default {
             Find me on any of these platforms, i respond 1-2 business days. Or simply write me an E-Mail.
           </h5>
           <div class="flex mt-6 lg:mb-0 mb-6">
-            <Cta />
+            <a class="btn block mr-1 md:mr-2" href="mailto:shadynathantawfik@gmail.com">
+              <span class="hidden md:inline-block">Get in</span> Contact
+            </a>
             <Social />
           </div>
         </div>
@@ -95,7 +97,15 @@ export default {
   </footer>
 </template>
 
-<style scoped>
+<style lang="postcss" scoped>
+li.flex-1 {
+  padding: 0 1rem;
+}
+
+.nuxt-link-exact-active {
+  @apply text-primary font-bold cursor-default;
+}
+
 footer {
   width: 100%;
   border-top: 1px solid var(--text)
