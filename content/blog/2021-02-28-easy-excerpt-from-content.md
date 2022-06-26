@@ -12,4 +12,10 @@ description: The complete refresh of my website, which ended up changing the
 
 ![This is the old website of Shady Tawfik](/img/scr-20220626-qqz.png "MA Old Site")
 
+![Work Page of Shady Tawfiks old Website](/img/scr-20220626-qv8.png "Work Page")
+
 ![The Contact Form of Shady Tawfiks Old Website](/img/scr-20220626-qrk.png "Contact Form")
+
+There was even a dark mode (which was terribly coded btw)
+
+![Dark Mode Work Page](/img/scr-20220626-qve.png "Dark Mode Work Page")
