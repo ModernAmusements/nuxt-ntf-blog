@@ -7,6 +7,9 @@ export default {
     };
   },
 };
+$('.js-tilt').tilt({
+
+})
 </script>
 
 <template>
@@ -16,13 +19,15 @@ export default {
       <div class="hero-wrapper">
         <div>
           <div class="w-50">
-            <h3 class="text-start">Compiling Ideas Into =>> Code</h3>
-            <h1 class="text-start">Hello! I’m Shady. I work with startups and top companies!</h1>
-            <p>I’m a fullstack web developer from the Germany. Interested in programming and to code inclusive,
-              effective, and
-              impactful digital products. Logical approach to problem solving is my passion. Code perfectionist in the
-              best
-              sense of the word.</p>
+            <p class="text-start underline underline-offset-1 text-sm">Compiling Ideas Into =>> Code</p>
+            <h1 class="text-start text-md">Hello! I’m Shady.
+              <br />
+              I work with startups, artists and top companies!
+            </h1>
+            <p>I’m a fullstack web developer from the Germany, Bielefeld. Interested in programming and to code
+              inclusive,
+              effective, and impactful digital products. Logical approach to problem solving is my passion. Code
+              perfectionist in the best sense of the word.</p>
             <div class="mt-12">
               <nuxt-link class="btn mr-5" alt="Modern Amusment Blog" to="/blog">Blog</nuxt-link>
               <nuxt-link class="btn" alt="Modern Amusment Blog" to="/About">About</nuxt-link>
@@ -57,9 +62,6 @@ img {
   object-fit: cover;
 }
 
-h3 {
-  border-bottom: 1px solid var(--text);
-}
 
 @media (max-width: 780px) {
   .hero-wrapper {
