@@ -17,7 +17,7 @@
           <!-- Items -->
           <span v-for="(menuItem, index) in menuItems" :key="index">
             <li>
-              <nuxt-link :to="menuItem.link">
+              <nuxt-link :to="menuItem.link" :class="menuItem.class">
                 <i class="bx" :class="menuItem.icon || 'bx-square-rounded'" />
                 <!-- Link Name -->
                 <span class="links_name">{{ menuItem.name }}</span>
@@ -63,27 +63,31 @@ export default {
           link: '/',
           name: 'Home',
           icon: 'bx-home',
+          class: '',
         },
         {
           link: '/blog',
           name: 'Blog',
-
           icon: 'bx-edit',
+          class: '',
         },
         {
-          link: '/projects',
+          link: '#',
           name: 'Projects',
           icon: 'bx-code',
+          class: 'disabled'
         },
         {
           link: '#',
           name: 'Snippets',
           icon: 'bxs-component',
+          class: 'disabled'
         },
         {
           link: '#',
           name: 'About',
           icon: 'bx-user',
+          class: 'disabled'
         },
       ],
     },
@@ -286,6 +290,12 @@ export default {
 
 #my-scroll::-webkit-scrollbar {
   display: none;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 @media (max-width: 420px) {
