@@ -7,9 +7,6 @@ export default {
     };
   },
 };
-$('.js-tilt').tilt({
-
-})
 </script>
 
 <template>

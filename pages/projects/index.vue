@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section v-if="posts" class="w-full max-w-5xl mx-auto">
+    <section v-if="posts" class="w-full">
       <h1 class="title">Projects</h1>
       <posts post-type="projects" :amount="10" />
     </section>
