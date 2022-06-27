@@ -178,7 +178,9 @@ bindTapableOption('inverted', toggleInvertedMode);
 updateInvertedLabel();
 ```
 
-This is a 153-line code that was solely responsible for controlling the dark mode. I have written the code in 2018 and for that, it is not so bad. My approach was insofar interesting, as I have the status of the dark mode in the local storage. So I could ensure that when the user visits the site again his favorite color mode is set.
+
+
+This is a 153-line code that was solely responsible for controlling the dark mode. I have written the code in 2016 and for that, it is not so bad. My approach was insofar interesting, as I have the status of the dark mode in the local storage. So I could ensure that when the user visits the site again his favorite color mode is set.
 
 My old website is written in PHP and I wanted to use Laravel <https://laravel.com/> as a framework for simplicity because it was relatively new at the time. This allowed me to keep my backend and frontend in one project. As CMS I used Kirby <https://getkirby.com/>, and consciously decided against a CSS framework. Not because I don't like them. If it is an economic decision I would always take a CSS framework. But I had time and wanted to show what I can do. Therefore only individual SCSS. I put the site live via Digital Ocean <https://www.digitalocean.com/>. 
 
