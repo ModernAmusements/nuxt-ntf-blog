@@ -1,5 +1,5 @@
 ---
-createdAt: 2021-02-28
+createdAt: 2022-06-26T22:00:00.000Z
 title: Why I decided to redesign my website
 description: The complete refresh of my website, which ended up changing the
   tech stack completely
