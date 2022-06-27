@@ -180,9 +180,9 @@ updateInvertedLabel();
 
 This is a 153-line code that was solely responsible for controlling the dark mode. I have written the code in 2018 and for that, it is not so bad. My approach was insofar interesting, as I have the status of the dark mode in the local storage. So I could ensure that when the user visits the site again his favorite color mode is set.
 
-My old website is written in PHP and I wanted to use Laravel as a framework for simplicity because it was relatively new at the time. This allowed me to keep my backend and frontend in one project. As CMS I used Kirby, and consciously decided against a CSS framework. Not because I don't like them. If it is an economic decision I would always take a CSS framework. But I had time and wanted to show what I can do. Therefore only individual SCSS. I put the site live via Digital Ocean. 
+My old website is written in PHP and I wanted to use Laravel <https://laravel.com/> as a framework for simplicity because it was relatively new at the time. This allowed me to keep my backend and frontend in one project. As CMS I used Kirby <https://getkirby.com/>, and consciously decided against a CSS framework. Not because I don't like them. If it is an economic decision I would always take a CSS framework. But I had time and wanted to show what I can do. Therefore only individual SCSS. I put the site live via Digital Ocean <https://www.digitalocean.com/>. 
 
-During the development, I noticed, that a simple portfolio website is unnecessarily complicated by the use of Laravel. That's why I limited myself to PHP but used Laravel Mix as a bundler. Laravel Mix is a bundler that is perfect and is very easy to configure. Kirby CMS is the best but also the most expensive CMS I could work with. It is perfectly adapted to the wishes of developers but also designers who need more CMS functions than the maintenance of content. 
+During the development, I noticed, that a simple portfolio website is unnecessarily complicated by the use of Laravel. That's why I limited myself to PHP but used Laravel Mix <https://laravel-mix.com/> as a bundler. Laravel Mix is a bundler that is perfect and is very easy to configure. Kirby CMS is the best but also the most expensive CMS I could work with. It is perfectly adapted to the wishes of developers but also designers who need more CMS functions than the maintenance of content. 
 
 I have built many customers a Kirby CMS backend with which they were able to build whole pages (even new pages) themselves. Similar to Elemetor but with x times individualization. I think that's why the price is justified. In addition, Kirby CMS, as well as Laravel Mix is excellently documented. 
 
@@ -198,6 +198,6 @@ The goals were simple:
 Modern technology
 low costs
 
-I made a conscious decision to write my new portfolio in JavaScript with NuxtJS and TailwindCSS since I wrote my last one in PHP. I was attracted by the challenge because the tech stack at my work is based on PHP (Laravel, Blade, Bootstrap, MySQL, etc). It is important to me to keep my knowledge fresh and up to date. And to give the whole thing a little puff I gave myself 7 days until the site should be live. 
+I made a conscious decision to write my new portfolio in JavaScript with NuxtJS <https://v3.nuxtjs.org/> and TailwindCSS <https://tailwindcss.com/> since I wrote my last one in PHP. I was attracted by the challenge because the tech stack at my work is based on PHP (Laravel, Blade, Bootstrap, MySQL, etc). It is important to me to keep my knowledge fresh and up to date. And to give the whole thing a little puff I gave myself 7 days until the site should be live. 
 
 You can see the result right now and I hope it was worth it. I will go into more detail in my next blog article about how the 7 days went. And at the same time in 2 weeks (date of the article), a NuxtJS Tailwind CSS tutorial is available, with which you can write your portfolio.
