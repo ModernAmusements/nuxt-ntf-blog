@@ -72,21 +72,15 @@ export default {
           class: '',
         },
         {
+          link: '/about',
+          name: 'About',
+          icon: 'bx-user',
+          class: ''
+        },
+        {
           link: '#',
           name: 'Projects',
           icon: 'bx-code',
-          class: 'disabled'
-        },
-        {
-          link: '#',
-          name: 'Snippets',
-          icon: 'bxs-component',
-          class: 'disabled'
-        },
-        {
-          link: '#',
-          name: 'About',
-          icon: 'bx-user',
           class: 'disabled'
         },
       ],
