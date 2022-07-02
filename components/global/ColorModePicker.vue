@@ -60,15 +60,15 @@ export default {
 
 <style lang="postcss" scoped>
 .toggle {
-  left: 4px;
+  right: 4px;
 }
 
 .icon {
-  width: 44px;
-  height: 44px;
+  width: 30px;
+  height: 30px;
   background-color: var(--bg-secondary);
   border-color: var(--border-color);
-  @apply relative m-0 p-2 top-0 cursor-pointer rounded border transition-all duration-200 ease-in-out;
+  @apply relative m-0 p-1 top-0 cursor-pointer rounded border transition-all duration-200 ease-in-out;
 
   &:hover {
     transform: translateY(-1px);
