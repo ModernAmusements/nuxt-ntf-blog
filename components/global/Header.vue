@@ -63,14 +63,14 @@ section {
   &::before {
     content: "";
     z-index: -1;
-    background-color: var(--bg-transparent);
+    background-color: var(--bg-header);
     backdrop-filter: blur(12px);
     @apply absolute bottom-0 inset-x-0 h-20 transition-colors duration-200 ease-in-out;
   }
 }
 
 .primary-bg {
-  background-color: var(--bg-transparent);
+  background-color: var(--bg-header);
   backdrop-filter: blur(12px);
 }
 
@@ -82,10 +82,8 @@ section {
   &.scrim-bg {
     &::after {
       animation-name: fadeIn2;
-      background: linear-gradient(to bottom,
-          #e5e7eb,
-          cubic-bezier(0.15, 0, 0.45, 1),
-          transparent);
+      background-color: var(--bg-header);
+      backdrop-filter: blur(12px);
     }
   }
 
