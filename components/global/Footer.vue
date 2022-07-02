@@ -110,4 +110,9 @@ footer {
   width: 100%;
   border-top: 1px solid var(--text)
 }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--text);
+}
 </style>

@@ -83,7 +83,7 @@ export default {
 
 .light {
   & .icon {
-    background-color: var(--bg);
+    background-color: var(--bg-header);
     border-color: var(--border-color-secondary);
     color: var(--text);
 

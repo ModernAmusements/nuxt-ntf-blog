@@ -102,7 +102,6 @@ export default {
         '--secondary-color': this.secondaryColor,
         '--home-section-color': this.homeSectionColor,
         '--logo-title-color': this.logoTitleColor,
-        '--icons-color': this.iconsColor,
         '--serach-input-text-color': this.searchInputTextColor,
         '--menu-items-hover-color': this.menuItemsHoverColor,
         '--menu-items-text-color': this.menuItemsTextColor,
@@ -223,7 +222,7 @@ export default {
 }
 
 .sidebar li a:hover {
-  @apply border-primary-300 bg-primary-800 text-white;
+  @apply bg-primary-800 text-white;
   border-radius: 0.25rem;
 }
 
