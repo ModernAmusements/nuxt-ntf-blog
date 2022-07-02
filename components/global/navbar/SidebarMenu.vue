@@ -217,13 +217,18 @@ export default {
   width: 100%;
   border-radius: 12px;
   align-items: center;
+  border-radius: 0.25rem;
   text-decoration: none;
   transition: all 0.4s ease;
 }
 
 .sidebar li a:hover {
-  @apply bg-primary-800 text-white;
-  border-radius: 0.25rem;
+  color: var(--text);
+  background-color: var(--color-primary);
+}
+
+.nuxt-link-exact-active.nuxt-link-active {
+  background-color: var(--color-primary);
 }
 
 
