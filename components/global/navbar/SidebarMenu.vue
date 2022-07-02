@@ -87,6 +87,11 @@ export default {
     },
 
   },
+  watch: {
+    '$route'() {
+      this.isOpened = false
+    }
+  },
   data() {
     return {
       isOpened: false
@@ -109,11 +114,6 @@ export default {
       }
     },
   },
-  watch: {
-    isOpened() {
-      window.document.body.style.paddingLeft = this.isOpened && this.isPaddingLeft ? this.menuOpenedPaddingLeftBody : this.menuClosedPaddingLeftBody
-    }
-  }
 }
 </script>
 
