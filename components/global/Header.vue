@@ -91,6 +91,10 @@ section {
     @apply text-primary-700 border-gray-600 bg-gray-100;
   }
 
+  &.nav {
+    border-bottom: 1px solid var(--color-gray-400);
+  }
+
 }
 
 /* Need two because of smoother switching between color modes */

@@ -135,7 +135,7 @@ export default {
   min-height: min-content;
   /* overflow-y: auto; */
   width: 50px;
-  background-color: var(--bg);
+  background-color: var(--bg-header);
   backdrop-filter: blur(12px);
   /* padding: 6px 14px 0 14px; */
   z-index: 99;
