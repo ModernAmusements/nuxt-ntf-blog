@@ -13,17 +13,20 @@ export default {
   <main>
     <!-- Homepage Hero -->
     <section>
-      <div class="hero-wrapper">
-        <div>
-          <p class="text-start underline underline-offset-1 text-sm">Compiling Ideas Into =>> Code</p>
-          <h1 class="text-start text-md">Hello! I’m Shady.
-            <br />
-            I work with startups, artists and top companies!
+      <div class="content-wrapper">
+        <div class="homepage-content-about text-start">
+          <h2 class="underline underline-offset-1 text-lg">Hello! I’m Shady</h2>
+          <h1 class="display">
+            I’m a <span class="text-primary">fullstack web developer</span> from the Germany, Bielefeld.
           </h1>
-          <p>I’m a fullstack web developer from the Germany, Bielefeld. Interested in programming and to code
-            inclusive,
-            effective, and impactful digital products. Logical approach to problem solving is my passion. Code
-            perfectionist in the best sense of the word.</p>
+          <p class="text-md">Interested in programming and to code inclusive, effective, and impactful digital products.
+            Logical
+            approach to problem solving is my passion. Code perfectionist in the best sense of the word.
+            <br />
+            <br />
+            On this blog I share tips and tricks, frameworks, projects, tutorials, etc. Make sure you subscribe to get
+            the latest updates
+          </p>
           <div class="mt-12">
             <nuxt-link class="btn mr-5" alt="Modern Amusment Blog" to="/blog">Blog</nuxt-link>
             <nuxt-link class="btn" alt="Modern Amusment Blog" to="/About">About</nuxt-link>
@@ -36,7 +39,7 @@ export default {
 </template>
 
 <style scoped>
-.hero-wrapper {
+.content-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,7 +53,7 @@ img {
 
 
 @media (max-width: 780px) {
-  .hero-wrapper {
+  .content-wrapper {
     flex-direction: column;
     justify-content: space-between;
   }

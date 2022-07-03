@@ -193,7 +193,7 @@ export default {
 </template>
 
 <style scoped>
-.hero-wrapper {
+.content-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -207,7 +207,7 @@ img {
 
 
 @media (max-width: 780px) {
-	.hero-wrapper {
+	.content-wrapper {
 		flex-direction: column;
 		justify-content: space-between;
 	}
