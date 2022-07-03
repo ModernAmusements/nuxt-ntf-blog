@@ -27,10 +27,14 @@ export default {
             On this blog I share tips and tricks, frameworks, projects, tutorials, etc. Make sure you subscribe to get
             the latest updates
           </p>
-          <div class="mt-12">
-            <nuxt-link class="btn mr-5" alt="Modern Amusment Blog" to="/blog">Blog</nuxt-link>
-            <nuxt-link class="btn" alt="Modern Amusment Blog" to="/About">About</nuxt-link>
-          </div>
+          <form class="flex flex-row flex-wrap items-center py-5" name="blog" method="POST" data-netlify="true">
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p class="pl-5 m-0">
+              <button class="btn" type="submit">Send</button>
+            </p>
+          </form>
         </div>
         <img class="mt-8 md:mt-0" :src="patternVue" alt="..." />
       </div>
@@ -49,6 +53,10 @@ img {
   width: 50%;
   height: auto;
   object-fit: cover;
+}
+
+input {
+  height: 2.6rem;
 }
 
 
