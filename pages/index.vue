@@ -39,29 +39,50 @@ export default {
             On this blog I share tips and tricks, frameworks, projects, tutorials, etc. Make sure you subscribe to get
             the latest updates
           </p>
-          <!-- Form -->
-          <form name="contact" method="POST" data-netlify="true">
-            <!-- name -->
+          <form class="w-full" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <p class="hidden">
+              <label>
+                Don’t fill this out if you’re human: <input name="bot-field" />
+              </label>
+            </p>
+            <p>
+            <div class="relative w-full mb-3 pr-0 pr-md-5">
+              <label class="block uppercase text-xs font-bold mb-2">Email:</label>
+              <input class="w-full" type="text" name="email" />
+            </div>
+            </p>
+            <p>
+            <div class="relative w-full mb-3 pr-0 pr-md-5">
+              <label class="block uppercase text-xs font-bold mb-2">Message:</label>
+              <textarea class="w-full" name="message"></textarea>
+            </div>
+            </p>
+            <p>
+              <button class="btn w-full" type="submit">Send</button>
+            </p>
+          </form>
+
+          <!-- <form name="contact" method="POST" data-netlify="true">
+
             <div class="flex justify-start flex-wrap">
               <div class="relative w-full mb-3 pr-0 pr-md-5">
                 <label class="block uppercase text-xs font-bold mb-2">Name</label>
                 <input type="text" name="name" class="focus:ring w-full ease-linear transition-all duration-150"
                   placeholder="Name" />
               </div>
-              <!-- Email -->
+       
               <div class="relative w-full mb-3 pl-0 pl-md-5">
                 <label class="block uppercase text-xs font-bold mb-2">Email</label>
                 <input type="email" name="email" class="focus:ring w-full ease-linear transition-all duration-150"
                   placeholder="Email" />
               </div>
             </div>
-            <!-- Role -->
+
             <div class="flex justify-start">
               <div class="mb-3 w-full">
                 <label class="block uppercase text-xs font-bold mb-2">Your Role:</label>
                 <select name="role[]" multiple
-                  class="form-select appearance-none w-full px-3 py-1.5 text-base font-normal bg-clip-padding bg-no-repeat border bg-grey-100 border-solid border-primary rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none"
-                  aria-label="Your Role">
+                  class="form-select appearance-none w-full px-3 py-1.5 text-base font-normal bg-clip-padding bg-no-repeat border bg-grey-100 border-solid border-primary rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none">
                   <option value="recruiter">Recruiter</option>
                   <option value="developer">Developer</option>
                   <option value="designer">Designer</option>
@@ -69,21 +90,20 @@ export default {
                   <option value="else">Else</option>
                 </select>
               </div>
-              <!-- message -->
+ 
             </div>
             <div class="w-full mb-3">
               <label class="block uppercase text-xs font-bold mb-2">Message</label>
               <textarea class="w-full" name="message"></textarea>
             </div>
-            <!-- submit -->
-            <div class="text-center mt-6">
-              <button
-                class="btn shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                type="button">
-                Submit
-              </button>
-            </div>
-          </form>
+   
+            <button
+              class="btn shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
+              type="button">
+              Submit
+            </button>
+
+          </form> -->
         </div>
       </div>
     </section>
