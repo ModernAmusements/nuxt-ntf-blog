@@ -13,10 +13,9 @@ export default {
 
 <template>
 	<main>
-		<!-- Homepage Hero -->
 		<section>
-			<div class="content-wrapper">
-				<div class="homepage-content-about text-center">
+			<div class="content-wrapper-col">
+				<div class="newsletter-success text-center">
 					<h2 class="underline underline-offset-1 text-lg">Thank you for your registration</h2>
 					<h1 class="display">
 						<span class="text-primary">Welcome to my Webdev Blog</span>
@@ -25,8 +24,8 @@ export default {
 						Don't worry i send out newsletters every 2 weeks and you can unsubscribe at any time
 					</p>
 					<nuxt-link to="/"
-						class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent">
-						Home
+						class="text-sm btn pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent">
+						Back Home ==>
 					</nuxt-link>
 				</div>
 				<img class="mt-8 md:mt-0 w-100" :src="patternVue" alt="..." />
@@ -36,9 +35,10 @@ export default {
 </template>
 
 <style scoped>
-.content-wrapper {
+.content-wrapper-col {
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 	justify-content: center;
 }
 

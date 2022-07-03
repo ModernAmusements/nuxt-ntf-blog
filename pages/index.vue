@@ -39,7 +39,7 @@ export default {
             On this blog I share tips and tricks, frameworks, projects, tutorials, etc. Make sure you subscribe to get
             the latest updates
           </p>
-          <form class="w-full" action="/pages/success" name="contact" method="POST" netlify-honeypot="bot-field"
+          <form class="w-full" action="/success" name="contact" method="POST" netlify-honeypot="bot-field"
             data-netlify="true">
             <p class="hidden">
               <label>
