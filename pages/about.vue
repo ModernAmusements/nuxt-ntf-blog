@@ -11,7 +11,7 @@ export default {
 
 <template>
 	<main>
-		<div class="container mx-auto px-4">
+		<!-- <div class="container mx-auto px-4">
 			<div class="items-center flex flex-wrap">
 				<img class="mt-8 md:mt-0 rounded" :src="aboutIMG" alt="Shady Tawfik Webdeveloper Bielefeld Germany" />
 				<div class="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -187,7 +187,7 @@ export default {
 			</div>
 
 
-		</div>
+		</div> -->
 
 	</main>
 </template>
