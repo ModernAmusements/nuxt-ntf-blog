@@ -49,13 +49,7 @@ export default {
             <p>
             <div class="relative w-full mb-3 pr-0 pr-md-5">
               <label class="block uppercase text-xs font-bold mb-2">Email:</label>
-              <input class="w-full" type="text" name="email" />
-            </div>
-            </p>
-            <p>
-            <div class="relative w-full mb-3 pr-0 pr-md-5">
-              <label class="block uppercase text-xs font-bold mb-2">Message:</label>
-              <textarea class="w-full" name="message"></textarea>
+              <input class="w-full" type="text" name="email" required />
             </div>
             </p>
             <p>
