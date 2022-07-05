@@ -1,6 +1,6 @@
 <script>
-import patternVue from '@/assets/img/pattern_vue.png'
-import blogIcon from '@/assets/img/blog_icon.png'
+import patternVue from '@/assets/img/homepage-section-1.svg'
+import blogIcon from '@/assets/img/ma-homepage-form-section-2.svg'
 export default {
   data() {
     return {
@@ -62,49 +62,6 @@ export default {
               <button class="btn w-full" type="submit">Send</button>
             </p>
           </form>
-
-          <!-- <form name="contact" method="POST" data-netlify="true">
-
-            <div class="flex justify-start flex-wrap">
-              <div class="relative w-full mb-3 pr-0 pr-md-5">
-                <label class="block uppercase text-xs font-bold mb-2">Name</label>
-                <input type="text" name="name" class="focus:ring w-full ease-linear transition-all duration-150"
-                  placeholder="Name" />
-              </div>
-       
-              <div class="relative w-full mb-3 pl-0 pl-md-5">
-                <label class="block uppercase text-xs font-bold mb-2">Email</label>
-                <input type="email" name="email" class="focus:ring w-full ease-linear transition-all duration-150"
-                  placeholder="Email" />
-              </div>
-            </div>
-
-            <div class="flex justify-start">
-              <div class="mb-3 w-full">
-                <label class="block uppercase text-xs font-bold mb-2">Your Role:</label>
-                <select name="role[]" multiple
-                  class="form-select appearance-none w-full px-3 py-1.5 text-base font-normal bg-clip-padding bg-no-repeat border bg-grey-100 border-solid border-primary rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none">
-                  <option value="recruiter">Recruiter</option>
-                  <option value="developer">Developer</option>
-                  <option value="designer">Designer</option>
-                  <option value="headhunter">Headhunter</option>
-                  <option value="else">Else</option>
-                </select>
-              </div>
- 
-            </div>
-            <div class="w-full mb-3">
-              <label class="block uppercase text-xs font-bold mb-2">Message</label>
-              <textarea class="w-full" name="message"></textarea>
-            </div>
-   
-            <button
-              class="btn shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-              type="button">
-              Submit
-            </button>
-
-          </form> -->
         </div>
       </div>
     </section>
@@ -119,7 +76,7 @@ export default {
 }
 
 img {
-  width: 50%;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -128,7 +85,7 @@ input {
   height: 2.6rem;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1024px) {
   .content-wrapper {
     flex-direction: column;
     justify-content: space-between;
