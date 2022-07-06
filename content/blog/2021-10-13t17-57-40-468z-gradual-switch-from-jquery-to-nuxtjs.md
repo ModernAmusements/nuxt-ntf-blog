@@ -37,26 +37,24 @@ I could now also go into the CI. But this would go beyond the scope of this arti
 
 Now let's look at the differences in syntax. 
 
-jQuery:
+**jQuery:**
 
 ```javascript
 $( "#element" ).on( "click", function() {
   console.log( $( this).text() );
 });
-
 ```
 
-Vanilla JS:
+**Vanilla JS:**
 
 ```javascript
 var element = document.getElementById('element');
 div.addEventListener('click', function(e){
   console.log(this.getAttribute('id'))
 });
-
 ```
 
-VueJs:
+**VueJs:**
 
 ```javascript
 VueJs:
@@ -65,13 +63,8 @@ VueJs:
 <button @click="isClicked = !isClicked">
  	Click
 </button>
-
 ```
 
-
-
 As you can see Vuejs is the clear winner because unlike the previous examples all the code is contained in one file. Working with Vuejs and NuxtJs is as intuitive as using an IPhone. It almost makes you wonder why we used to bother with unnecessarily complicated data systems. The advantages are obvious. 
-
-
 
 This is just a small example why we are slowly moving to NuxtJs. Of course modularity plays a big role in the economic development but that is a topic for another article. I hope this helped you to get a small insight into the life of a developer, the decision for technology and its syntactical differences.
