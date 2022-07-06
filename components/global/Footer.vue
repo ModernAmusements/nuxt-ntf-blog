@@ -61,25 +61,21 @@ export default {
             <div class="w-full lg:w-4/12 px-4">
               <span
                 class="block uppercase hover:text-primary-600 dark:text-primary-400 text-sm font-bold mb-2 underline">
-                Other Resources
+                Other Resources =>
               </span>
               <ul class="list-unstyled">
                 <li>
-                  <a class="hover:text-primary-600 dark:text-primary-400 font-semibold block pb-2 text-sm" href="">
-                    MIT License
+                  <a disabled class="hover:text-primary dark:text-primary-400 font-semibold block py-2 text-sm"
+                    href="#">
+                    MIT License =>
                   </a>
                 </li>
                 <li>
-                  <a class="  hover:text-primary-600 dark:text-primary-400 font-semibold block pb-2 text-sm" href="">
-                    Terms & Conditions
-                  </a>
+                  <nuxt-link to="/privacy"
+                    class="hover:text-primary dark:text-primary-400 font-semibold block py-2 text-sm">
+                    Terms & Conditions =>
+                  </nuxt-link>
                 </li>
-                <li>
-                  <a class="  hover:text-primary-600 dark:text-primary-400 font-semibold block pb-2 text-sm" href="">
-                    Privacy Policy
-                  </a>
-                </li>
-
               </ul>
             </div>
           </div>
@@ -102,8 +98,11 @@ li.flex-1 {
   padding: 0 1rem;
 }
 
-.nuxt-link-exact-active {
-  @apply text-primary font-bold cursor-default;
+.nuxt-link-exact-active.nuxt-link-active {
+  @apply font-bold cursor-default;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  padding-left: 0.5rem;
 }
 
 footer {

@@ -39,7 +39,7 @@ li.flex-1 {
 }
 
 .nuxt-link-exact-active {
-  @apply text-primary font-bold cursor-default;
+  @apply font-bold cursor-default;
 }
 
 section {
@@ -75,7 +75,7 @@ section {
 }
 
 .nuxt-link-exact-active {
-  @apply text-primary font-bold cursor-default;
+  @apply font-bold cursor-default;
 }
 
 .light {
@@ -88,7 +88,7 @@ section {
   }
 
   &.nuxt-link-exact-active {
-    @apply text-primary-700 border-gray-600 bg-gray-100;
+    @apply border-gray-600 bg-gray-100;
   }
 
   &.nav {
