@@ -1,5 +1,6 @@
 {
   "sitename": "ModernAmusement by Shady Tawfik",
   "sitedescription": "Sharing skills in the area of web development. Blogs about the latest trends and greats. and much more.",
-  "sitelang": "en"
+  "sitelang": "en",
+  "image": "static/preview-meta.jpg"
 }
