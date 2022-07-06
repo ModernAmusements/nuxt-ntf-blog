@@ -78,10 +78,10 @@ export default {
           class: ''
         },
         {
-          link: '#',
+          link: '/projects',
           name: 'Projects',
           icon: 'bx-code',
-          class: 'disabled'
+          class: ''
         },
       ],
     },

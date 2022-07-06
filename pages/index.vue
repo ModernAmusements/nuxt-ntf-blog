@@ -83,6 +83,7 @@ input {
   .content-wrapper {
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 3rem;
   }
 
   img {
