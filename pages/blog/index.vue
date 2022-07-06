@@ -2,6 +2,7 @@
   <main>
     <section v-if="posts" class="content-wrapper">
       <h1>Blog</h1>
+      <p class="text-lg">Welcome to the best and latest news on Web development current by ModernAmusments.</p>
       <posts post-type="blog" :amount="10" />
     </section>
   </main>

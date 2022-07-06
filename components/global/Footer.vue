@@ -61,15 +61,9 @@ export default {
             <div class="w-full lg:w-4/12 px-4">
               <span
                 class="block uppercase hover:text-primary-600 dark:text-primary-400 text-sm font-bold mb-2 underline">
-                Other Resources =>
+                Other Resources
               </span>
               <ul class="list-unstyled">
-                <li>
-                  <a disabled class="hover:text-primary dark:text-primary-400 font-semibold block py-2 text-sm"
-                    href="#">
-                    MIT License =>
-                  </a>
-                </li>
                 <li>
                   <nuxt-link to="/privacy"
                     class="hover:text-primary dark:text-primary-400 font-semibold block py-2 text-sm">

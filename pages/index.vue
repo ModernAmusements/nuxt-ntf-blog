@@ -1,10 +1,10 @@
 <script>
-import patternVue from '@/assets/img/homepage-section-1.svg'
+import HeroImg from '@/assets/img/homepage-section-1.svg'
 import blogIcon from '@/assets/img/ma-homepage-form-section-2.svg'
 export default {
   data() {
     return {
-      patternVue,
+      HeroImg,
       blogIcon
     }
   },
@@ -16,6 +16,7 @@ export default {
     <!-- Homepage Hero -->
     <section>
       <div class="content-wrapper">
+        <!-- Homepage Text -->
         <div class="homepage-content-about text-start">
           <h2 class="underline underline-offset-1 text-lg">Hello! I’m Shady</h2>
           <h1 class="display">
@@ -26,9 +27,11 @@ export default {
             to problem solving is my passion. Code perfectionist in the best sense of the word.
           </p>
         </div>
-        <img class="mt-8 md:mt-0 w-100" :src="patternVue" alt="..." />
+        <!-- Homepage Img -->
+        <img class="mt-8 md:mt-0 w-100" :src="HeroImg" alt="..." />
       </div>
-      <div class="content-wrapper">
+      <!-- Homepage Section 1 -->
+      <div class="content-wrapper section-1">
         <img class="mt-8 md:mt-0" :src="blogIcon" alt="..." />
         <div class="homepage-content-blog text-start">
           <h3 class="underline underline-offset-1 text-lg">You can expect</h3>
@@ -86,10 +89,8 @@ input {
     padding-bottom: 3rem;
   }
 
-  img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  .content-wrapper.section-1 img {
+    order: 2
   }
 }
 </style>

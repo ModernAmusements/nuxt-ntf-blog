@@ -32,7 +32,7 @@ export default {
 				</div>
 				<img class="mt-8 md:mt-0 w-100" :src="aboutImgOne" alt="..." />
 			</div>
-			<div class="content-wrapper">
+			<div class="content-wrapper section-1">
 				<img class="mt-8 md:mt-0" :src="aboutImgTwo" alt="..." />
 				<div class="homepage-content-blog text-start">
 					<h3 class="underline underline-offset-1 text-lg">Capabilities</h3>
@@ -115,11 +115,8 @@ input {
 		padding-bottom: 3rem;
 	}
 
-	img,
-	svg {
-		width: 100%;
-		height: auto;
-		object-fit: cover;
+	.content-wrapper.section-1 img {
+		order: 2
 	}
 }
 </style>
