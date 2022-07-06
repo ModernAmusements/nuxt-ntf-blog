@@ -5,10 +5,10 @@ description: In the company we have decided to slowly bring our projects up to d
 ---
 In the company we have decided to slowly bring our projects up to date with the latest software available without being blinded by hyped frameworks. Therefore, the annual surveys of developers such as https://2021.stateofjs.com/de-DE/ play a big role in making a decision. The following points were also particularly important to us.
 
-Adaptation of the software in the software world. 
-Documentation
-Developer experience while working
-and much more
+* Adaptation of the software in the software world. 
+* Documentation
+* Developer experience while working
+* and much more
 
 I have established 2 teckstacks in our company, which we use depending on the requirements. Often we connect both stacks but also among themselves. (More about this in a separate blog article)
 
@@ -22,7 +22,6 @@ In this case we use:
 * Bootstrap5
 * PWA (install website as standalone app)
 * Netlify CMS (no need for a separate server)
-* Prettier
 * Nuxt-content (w/ exensible support for markdown and code-blocks)
 
 This tech stack doesn't have a cool name but is extremely good for quickly turning a design into a website.
