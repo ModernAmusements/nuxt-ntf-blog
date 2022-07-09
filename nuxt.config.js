@@ -4,7 +4,7 @@ import * as SITE_INFO from './content/site/info.json'
 import { COLOR_MODE_FALLBACK } from './utils/globals.js'
 
 export default {
-  target: 'static',
+  target: 'server',
   components: true,
   generate: {
     fallback: true,
