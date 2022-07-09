@@ -147,10 +147,10 @@ export default {
       source: 'static/preview.png',
       filename: 'preview',
     },
-    manifest: { name: SITE_INFO.sitename || process.env.npm_package_name || '', lang: process.env.lang },
+    manifest: { name: 'ModernAmusement by Shady Tawfik', lang: 'en-EN' },
     meta: {
-      name: SITE_INFO.sitename || process.env.npm_package_name || '',
-      lang: process.env.lang,
+      name: 'ModernAmusement by Shady Tawfik',
+      lang: 'en-EN',
       ogHost: process.env.URL,
       ogImage: 'static/preview-meta.jpg',
     },
