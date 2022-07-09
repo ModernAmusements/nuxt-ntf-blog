@@ -34,7 +34,7 @@ export default {
       {
         name: 'og:image',
         property: 'og:image',
-        content: 'https://modern-amusements.dev/static/preview-meta.jpg',
+        content: 'https://modern-amusements.dev/preview-meta.jpg',
       },
 
       { name: 'og-image', property: 'og:image', content: 'https://modern-amusements.dev/static/preview-meta.jpg' },

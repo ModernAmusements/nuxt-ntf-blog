@@ -4,50 +4,7 @@ import blogIcon from '@/assets/img/ma-homepage-form-section-2.svg'
 export default {
   head() {
     return {
-      title: "ModernAmusement by Shady Tawfik",
-      meta: [
-        { property: 'og:site_name', content: 'ModernAmusement by Shady Tawfik' },
-        { name: 'og-type', property: 'og:type', content: 'ModernAmusement by Shady Tawfik' },
-        {
-          name: 'og:title',
-          property: 'og:title',
-          content: 'ModernAmusement by Shady Tawfik',
-        },
-        {
-          name: 'og:description',
-          property: 'og:description',
-          content: 'Sharing skills in the area of web development.',
-        },
-        {
-          name: 'og:image',
-          property: 'og:image',
-          content: 'https://modern-amusements.dev/static/preview-meta.jpg',
-        },
-
-        { name: 'og-image', property: 'og:image', content: 'https://modern-amusements.dev/static/preview-meta.jpg' },
-        { name: 'twitter:site', content: '@nathan_tawfik' },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        {
-          name: 'twitter:url',
-          name: 'twitter:url',
-          content: 'https://twitter.com/nathan_tawfik',
-        },
-        {
-          name: 'twitter:title',
-          name: 'twitter:title',
-          content: 'ModernAmusement by Shady Tawfik',
-        },
-        {
-          name: 'twitter:description',
-          name: 'twitter:description',
-          content: 'Sharing skills in the area of web development.',
-        },
-        {
-          name: 'twitter:image',
-          name: 'twitter:image',
-          content: 'https://modern-amusements.dev/preview-meta.jpg',
-        },
-      ],
+      title: "ModernAmusement => Shady Tawfik",
     };
   },
   data() {
