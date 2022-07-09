@@ -39,10 +39,10 @@ export default {
       {
         name: 'og:image',
         property: 'og:image',
-        content: 'https://modern-amusements.dev/static/preview-meta.jpg',
+        content: 'https://modern-amusements.dev/preview-meta.jpg',
       },
 
-      { name: 'og-image', property: 'og:image', content: 'https://modern-amusements.dev/static/preview-meta.jpg' },
+      { name: 'og-image', property: 'og:image', content: 'https://modern-amusements.dev/preview-meta.jpg' },
       { name: 'twitter:site', content: '@nathan_tawfik' },
       { name: 'twitter:card', content: 'summary_large_image' },
       {
@@ -63,7 +63,7 @@ export default {
       {
         name: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://modern-amusements.dev/static/preview-meta.jpg',
+        content: 'https://modern-amusements.dev/preview-meta.jpg',
       },
     ],
   },
@@ -144,7 +144,7 @@ export default {
   },
   pwa: {
     icon: {
-      source: '/static/preview.png',
+      source: '/preview.png',
       filename: 'preview',
     },
     manifest: { name: 'ModernAmusement by Shady Tawfik', lang: 'en-EN' },
@@ -152,7 +152,7 @@ export default {
       name: 'ModernAmusement by Shady Tawfik',
       lang: 'en-EN',
       ogHost: process.env.URL,
-      ogImage: '/static/preview-meta.jpg',
+      ogImage: '/preview-meta.jpg',
     },
   },
 }
