@@ -22,11 +22,6 @@ export default {
       { property: 'og:site_name', content: 'ModernAmusement by Shady Tawfik' },
       { name: 'og-type', property: 'og:type', content: 'ModernAmusement by Shady Tawfik' },
       {
-        name: 'og-desc',
-        property: 'og:description',
-        content: 'Sharing skills in the area of web development.',
-      },
-      {
         name: 'og:title',
         property: 'og:title',
         content: 'ModernAmusement by Shady Tawfik',
@@ -39,10 +34,10 @@ export default {
       {
         name: 'og:image',
         property: 'og:image',
-        content: 'https://modern-amusements.dev/preview-meta.jpg',
+        content: 'https://modern-amusements.dev/static/preview-meta.jpg',
       },
 
-      { name: 'og-image', property: 'og:image', content: 'https://modern-amusements.dev/preview-meta.jpg' },
+      { name: 'og-image', property: 'og:image', content: 'https://modern-amusements.dev/static/preview-meta.jpg' },
       { name: 'twitter:site', content: '@nathan_tawfik' },
       { name: 'twitter:card', content: 'summary_large_image' },
       {
@@ -144,15 +139,52 @@ export default {
   },
   pwa: {
     icon: {
-      source: '/preview.png',
+      source: 'static/preview.png',
       filename: 'preview',
     },
     manifest: { name: 'ModernAmusement by Shady Tawfik', lang: 'en-EN' },
-    meta: {
-      name: 'ModernAmusement by Shady Tawfik',
-      lang: 'en-EN',
-      ogHost: process.env.URL,
-      ogImage: '/preview-meta.jpg',
-    },
+    meta: [
+      { property: 'og:site_name', content: 'ModernAmusement by Shady Tawfik' },
+      { name: 'og-type', property: 'og:type', content: 'ModernAmusement by Shady Tawfik' },
+      {
+        name: 'og-desc',
+        property: 'og:description',
+        content: 'Sharing skills in the area of web development.',
+      },
+      {
+        name: 'og:title',
+        property: 'og:title',
+        content: 'ModernAmusement by Shady Tawfik',
+      },
+      {
+        name: 'og:image',
+        property: 'og:image',
+        content: 'https://modern-amusements.dev/static/preview-meta.jpg',
+      },
+
+      { name: 'og-image', property: 'og:image', content: 'https://modern-amusements.dev/static/preview-meta.jpg' },
+      { name: 'twitter:site', content: '@nathan_tawfik' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        name: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://twitter.com/nathan_tawfik',
+      },
+      {
+        name: 'twitter:title',
+        name: 'twitter:title',
+        content: 'ModernAmusement by Shady Tawfik',
+      },
+      {
+        name: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Sharing skills in the area of web development.',
+      },
+      {
+        name: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://modern-amusements.dev/preview-meta.jpg',
+      },
+    ],
   },
 }
