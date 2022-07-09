@@ -14,54 +14,54 @@ export default {
       process.env.NODE_ENV === 'production'
         ? process.env.URL || 'http://createADotEnvFileAndSetURL'
         : 'http://localhost:3000',
-    lang: SITE_INFO.sitelang || 'de-DE',
+    lang: SITE_INFO.sitelang || 'en-EN',
   },
   head: {
     title: 'ModernAmusement by Shady Tawfik',
     meta: [
       { property: 'og:site_name', content: 'ModernAmusement by Shady Tawfik' },
-      { hid: 'og-type', property: 'og:type', content: 'ModernAmusement by Shady Tawfik' },
+      { name: 'og-type', property: 'og:type', content: 'ModernAmusement by Shady Tawfik' },
       {
-        hid: 'og-desc',
+        name: 'og-desc',
         property: 'og:description',
         content: 'Sharing skills in the area of web development.',
       },
       {
-        hid: 'og:title',
+        name: 'og:title',
         property: 'og:title',
         content: 'ModernAmusement by Shady Tawfik',
       },
       {
-        hid: 'og:description',
+        name: 'og:description',
         property: 'og:description',
         content: 'Sharing skills in the area of web development.',
       },
       {
-        hid: 'og:image',
+        name: 'og:image',
         property: 'og:image',
         content: 'https://modern-amusements.dev/static/preview-meta.jpg',
       },
 
-      { hid: 'og-image', property: 'og:image', content: 'https://modern-amusements.dev/static/preview-meta.jpg' },
+      { name: 'og-image', property: 'og:image', content: 'https://modern-amusements.dev/static/preview-meta.jpg' },
       { name: 'twitter:site', content: '@nathan_tawfik' },
       { name: 'twitter:card', content: 'summary_large_image' },
       {
-        hid: 'twitter:url',
+        name: 'twitter:url',
         name: 'twitter:url',
         content: 'https://twitter.com/nathan_tawfik',
       },
       {
-        hid: 'twitter:title',
+        name: 'twitter:title',
         name: 'twitter:title',
         content: 'ModernAmusement by Shady Tawfik',
       },
       {
-        hid: 'twitter:description',
+        name: 'twitter:description',
         name: 'twitter:description',
         content: 'Sharing skills in the area of web development.',
       },
       {
-        hid: 'twitter:image',
+        name: 'twitter:image',
         name: 'twitter:image',
         content: 'https://modern-amusements.dev/static/preview-meta.jpg',
       },
