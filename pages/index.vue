@@ -2,6 +2,11 @@
 import HeroImg from '@/assets/img/homepage-section-1.svg'
 import blogIcon from '@/assets/img/ma-homepage-form-section-2.svg'
 export default {
+  head() {
+    return {
+      title: "ModernAmusement by Shady Tawfik"
+    };
+  },
   data() {
     return {
       HeroImg,
