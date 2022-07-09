@@ -9,8 +9,6 @@ export default {
   generate: {
     fallback: true,
   },
-
-  // ? The env Property: https://nuxtjs.org/api/configuration-env/
   env: {
     url:
       process.env.NODE_ENV === 'production'
@@ -18,46 +16,58 @@ export default {
         : 'http://localhost:3000',
     lang: SITE_INFO.sitelang || 'de-DE',
   },
-  /*
-   ** Headers of the page
-   */
   head: {
     title: 'ModernAmusement by Shady Tawfik',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { property: 'og:site_name', content: 'ModernAmusement by Shady Tawfik' },
+      { hid: 'og-type', property: 'og:type', content: 'ModernAmusement by Shady Tawfik' },
       {
-        hid: 'description',
-        name: 'description',
-        content: SITE_INFO.sitedescription || process.env.npm_package_description || '',
+        hid: 'og-desc',
+        property: 'og:description',
+        content: 'Sharing skills in the area of web development.',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'ModernAmusement by Shady Tawfik',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Sharing skills in the area of web development.',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://modern-amusements.dev/static/preview-meta.jpg',
+      },
+
+      { hid: 'og-image', property: 'og:image', content: 'https://modern-amusements.dev/static/preview-meta.jpg' },
+      { name: 'twitter:site', content: '@nathan_tawfik' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://twitter.com/nathan_tawfik',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'ModernAmusement by Shady Tawfik',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Sharing skills in the area of web development.',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://modern-amusements.dev/static/preview-meta.jpg',
       },
     ],
-    // link: [
-    //   {
-    //     rel: 'preconnect',
-    //     href: 'https://fonts.gstatic.com',
-    //     crossorigin: true,
-    //   },
-    //   {
-    //     rel: 'preload',
-    //     as: 'style',
-    //     href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap',
-    //   },
-    //   {
-    //     rel: 'stylesheet',
-    //     href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap',
-    //     media: 'print',
-    //     onload: `this.media='all'`,
-    //   },
-    // ], // ? Imports the font 'Inter', can be optimized by the netlify plugin 'Subfont' by uncommenting it in `netlify.toml`
-    // noscript: [
-    //   {
-    //     innerHTML:
-    //       '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">',
-    //   },
-    // ],
-    __dangerouslyDisableSanitizers: ['noscript'],
   },
+
   /*
    ** Customize the progress-bar color
    */
@@ -81,6 +91,7 @@ export default {
   /*
    ** Build configuration
    */
+
   build: {
     extractCSS: true,
     postcss: {
