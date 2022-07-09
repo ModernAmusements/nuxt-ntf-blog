@@ -22,7 +22,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: SITE_INFO.sitename || process.env.npm_package_name || '',
+    title: 'ModernAmusement by Shady Tawfik',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -69,7 +69,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/vue-content-placeholders.js', '~/plugins/fontawesome.js', '~/plugins/vue-meta.js'],
+  plugins: ['~/plugins/vue-content-placeholders.js', '~/plugins/fontawesome.js'],
   /*
    ** Nuxt.js dev-modules
    */
