@@ -144,7 +144,7 @@ export default {
   },
   pwa: {
     icon: {
-      source: 'static/preview.png',
+      source: '/static/preview.png',
       filename: 'preview',
     },
     manifest: { name: 'ModernAmusement by Shady Tawfik', lang: 'en-EN' },
