@@ -3,6 +3,23 @@ import aboutImgOne from '@/assets/img/about/about-img-1.png'
 import aboutImgTwo from '@/assets/img/about/about-img-2.svg'
 import aboutImgThree from '@/assets/img/about/about-img-3.png'
 export default {
+	head() {
+		return {
+			title: "About => Shady Tawfik",
+			meta: [
+				{
+					name: 'og:description',
+					property: 'og:description',
+					content: 'About Shady Tawfik from Bielefeld Germany, Fullstack Delevoper',
+				},
+				{
+					name: 'description',
+					property: 'description',
+					content: 'About Shady Tawfik from Bielefeld Germany, Fullstack Delevoper',
+				},
+			]
+		};
+	},
 	data() {
 		return {
 			aboutImgOne,

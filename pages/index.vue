@@ -5,6 +5,18 @@ export default {
   head() {
     return {
       title: "ModernAmusement => Shady Tawfik",
+      meta: [
+        {
+          name: 'og:description',
+          property: 'og:description',
+          content: 'ModernAmusement Homepage => Shady Tawfik Bielefeld',
+        },
+        {
+          name: 'description',
+          property: 'description',
+          content: 'ModernAmusement Homepage => Shady Tawfik Bielefeld',
+        },
+      ]
     };
   },
   data() {
@@ -25,7 +37,7 @@ export default {
         <div class="homepage-content-about text-start">
           <h2 class="underline underline-offset-1 text-lg">Hello! I’m Shady</h2>
           <h1 class="display">
-            I’m a <span class="text-primary">fullstack web developer</span> from the Germany, Bielefeld.
+            I’m a <span class="text-primary">fullstack web developer</span> from Germany, Bielefeld.
           </h1>
           <p class="text-md">
             Interested in programming and to code inclusive, effective, and impactful digital products. Logical approach

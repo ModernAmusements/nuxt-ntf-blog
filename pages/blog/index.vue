@@ -10,6 +10,23 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "Blog => ModernAmusement",
+      meta: [
+        {
+          name: 'og:description',
+          property: 'og:description',
+          content: 'Welcome to the best and latest news on Web development current by ModernAmusments. => Shady Tawfik Bielefeld',
+        },
+        {
+          name: 'description',
+          property: 'description',
+          content: 'Welcome to the best and latest news on Web development current by ModernAmusments. => Shady Tawfik Bielefeld',
+        },
+      ]
+    };
+  },
   async asyncData({ $content, error }) {
     let posts;
     try {

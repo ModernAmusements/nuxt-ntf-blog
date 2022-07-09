@@ -18,26 +18,21 @@ export default {
   },
   head: {
     title: 'ModernAmusement by Shady Tawfik',
+    manifest: { name: 'ModernAmusement by Shady Tawfik', lang: 'en-EN' },
     meta: [
       { property: 'og:site_name', content: 'ModernAmusement by Shady Tawfik' },
       { name: 'og-type', property: 'og:type', content: 'ModernAmusement by Shady Tawfik' },
       {
-        name: 'og:title',
-        property: 'og:title',
-        content: 'ModernAmusement by Shady Tawfik',
-      },
-      {
-        name: 'og:description',
-        property: 'og:description',
-        content: 'Sharing skills in the area of web development.',
-      },
-      {
         name: 'og:image',
         property: 'og:image',
-        content: 'https://modern-amusements.dev/preview-meta.jpg',
+        content: 'https://modern-amusements.dev/static/preview-meta.jpg',
       },
-
-      { name: 'og-image', property: 'og:image', content: 'https://modern-amusements.dev/static/preview-meta.jpg' },
+      {
+        name: 'image',
+        property: 'image',
+        content: 'https://modern-amusements.dev/static/preview-meta.jpg',
+      },
+      // Twitter
       { name: 'twitter:site', content: '@nathan_tawfik' },
       { name: 'twitter:card', content: 'summary_large_image' },
       {
@@ -58,7 +53,7 @@ export default {
       {
         name: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://modern-amusements.dev/preview-meta.jpg',
+        content: 'https://modern-amusements.dev/static/preview-meta.jpg',
       },
     ],
   },
@@ -147,22 +142,16 @@ export default {
       { property: 'og:site_name', content: 'ModernAmusement by Shady Tawfik' },
       { name: 'og-type', property: 'og:type', content: 'ModernAmusement by Shady Tawfik' },
       {
-        name: 'og-desc',
-        property: 'og:description',
-        content: 'Sharing skills in the area of web development.',
-      },
-      {
-        name: 'og:title',
-        property: 'og:title',
-        content: 'ModernAmusement by Shady Tawfik',
-      },
-      {
         name: 'og:image',
         property: 'og:image',
         content: 'https://modern-amusements.dev/static/preview-meta.jpg',
       },
-
-      { name: 'og-image', property: 'og:image', content: 'https://modern-amusements.dev/static/preview-meta.jpg' },
+      {
+        name: 'image',
+        property: 'image',
+        content: 'https://modern-amusements.dev/static/preview-meta.jpg',
+      },
+      // Twitter
       { name: 'twitter:site', content: '@nathan_tawfik' },
       { name: 'twitter:card', content: 'summary_large_image' },
       {
@@ -183,7 +172,7 @@ export default {
       {
         name: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://modern-amusements.dev/preview-meta.jpg',
+        content: 'https://modern-amusements.dev/static/preview-meta.jpg',
       },
     ],
   },

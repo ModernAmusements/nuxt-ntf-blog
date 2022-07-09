@@ -2,6 +2,23 @@
 import patternVue from '@/assets/img/pattern_vue.png'
 import blogIcon from '@/assets/img/blog_icon.png'
 export default {
+	head() {
+		return {
+			title: "Succes => ModernAmusement",
+			meta: [
+				{
+					name: 'og:description',
+					property: 'og:description',
+					content: 'Succes ModernAmusments. => Shady Tawfik Bielefeld',
+				},
+				{
+					name: 'description',
+					property: 'description',
+					content: 'Succes ModernAmusments. => Shady Tawfik Bielefeld',
+				},
+			]
+		};
+	},
 	data() {
 		return {
 			patternVue,

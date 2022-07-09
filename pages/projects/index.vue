@@ -9,6 +9,23 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "Projects => ModernAmusement",
+      meta: [
+        {
+          name: 'og:description',
+          property: 'og:description',
+          content: 'ModernAmusement Projects => Shady Tawfik Bielefeld',
+        },
+        {
+          name: 'description',
+          property: 'description',
+          content: 'ModernAmusement Projects => Shady Tawfik Bielefeld',
+        },
+      ]
+    };
+  },
   async asyncData({ $content, error }) {
     let posts;
     try {
