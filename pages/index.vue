@@ -2,6 +2,21 @@
 import HeroImg from '@/assets/img/homepage-section-1.svg'
 import blogIcon from '@/assets/img/ma-homepage-form-section-2.svg'
 export default {
+  head: {
+    title: 'ModernAmusement by Shady Tawfik',
+    meta: [
+      {
+        hid: 'Homepage',
+        name: 'ModernAmusement by Shady Tawfik',
+        description: 'Sharing skills in the area of web development. Blogs about the latest trends and greats. and much more.',
+        "twitter:title": "ModernAmusement by Shady Tawfik",
+        "twitter:url": "https://twitter.com/nathan_tawfik",
+        "twitter:card": "summary_large_image",
+        "twitter:description": "Sharing skills in the area of web development. Blogs about the latest trends and greats. and much more.",
+        "twitter:image": "/static/preview-meta.jpg"
+      }
+    ],
+  },
   data() {
     return {
       HeroImg,
@@ -20,7 +35,7 @@ export default {
         <div class="homepage-content-about text-start">
           <h2 class="underline underline-offset-1 text-lg">Hello! I’m Shady</h2>
           <h1 class="display">
-            I’m a <span class="text-primary">fullstack web developer</span> from the Germany, Bielefeld.
+            I’m a <span class="text-primary">fullstack web developer</span> from Germany, Bielefeld.
           </h1>
           <p class="text-md">
             Interested in programming and to code inclusive, effective, and impactful digital products. Logical approach

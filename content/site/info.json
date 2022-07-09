@@ -2,5 +2,10 @@
   "sitename": "ModernAmusement by Shady Tawfik",
   "sitedescription": "Sharing skills in the area of web development. Blogs about the latest trends and greats. and much more.",
   "sitelang": "en",
-  "image": "static/preview-meta.jpg"
+  "image": "/static/preview-meta.jpg",
+  "twitter:title": "ModernAmusement by Shady Tawfik",
+  "twitter:url": "https://twitter.com/nathan_tawfik",
+  "twitter:card": "summary_large_image",
+  "twitter:description": "Sharing skills in the area of web development. Blogs about the latest trends and greats. and much more.",
+  "twitter:image": "/static/preview-meta.jpg"
 }
