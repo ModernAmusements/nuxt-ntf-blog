@@ -152,7 +152,7 @@ export default {
       name: 'ModernAmusement by Shady Tawfik',
       lang: 'en-EN',
       ogHost: process.env.URL,
-      ogImage: 'static/preview-meta.jpg',
+      ogImage: '/static/preview-meta.jpg',
     },
   },
 }
