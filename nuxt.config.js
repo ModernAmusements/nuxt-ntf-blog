@@ -69,7 +69,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/vue-content-placeholders.js', '~/plugins/fontawesome.js'],
+  plugins: ['~/plugins/vue-content-placeholders.js', '~/plugins/fontawesome.js', '~/plugins/vue-meta.js'],
   /*
    ** Nuxt.js dev-modules
    */

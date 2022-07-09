@@ -2,20 +2,19 @@
 import HeroImg from '@/assets/img/homepage-section-1.svg'
 import blogIcon from '@/assets/img/ma-homepage-form-section-2.svg'
 export default {
-  head: {
-    title: 'ModernAmusement by Shady Tawfik',
-    meta: [
-      {
-        hid: 'Homepage',
-        name: 'ModernAmusement by Shady Tawfik',
-        description: 'Sharing skills in the area of web development. Blogs about the latest trends and greats. and much more.',
-        "twitter:title": "ModernAmusement by Shady Tawfik",
-        "twitter:url": "https://twitter.com/nathan_tawfik",
-        "twitter:card": "summary_large_image",
-        "twitter:description": "Sharing skills in the area of web development. Blogs about the latest trends and greats. and much more.",
-        "twitter:image": "/static/preview-meta.jpg"
-      }
-    ],
+  metaInfo() {
+    return {
+      meta: [
+        { hid: 'Homepage' },
+        { title: 'ModernAmusement by Shady Tawfik' },
+        { description: 'Sharing skills in the area of web development. Blogs about the latest trends and greats. and much more.' },
+        { image: '/static/preview-meta.jpg' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'ModernAmusement by Shady Tawfik' },
+        { name: 'twitter:description', content: 'Sharing skills in the area of web development. Blogs about the latest trends and greats. and much more.' },
+        { name: 'twitter:image', content: '/static/preview-meta.jpg' },
+      ]
+    }
   },
   data() {
     return {
@@ -24,6 +23,7 @@ export default {
     }
   },
 }
+
 </script>
 
 <template>
