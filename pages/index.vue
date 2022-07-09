@@ -8,7 +8,7 @@ export default {
         { hid: 'Homepage' },
         { title: 'ModernAmusement by Shady Tawfik' },
         { description: 'Sharing skills in the area of web development. Blogs about the latest trends and greats. and much more.' },
-        { image: '/static/preview-meta.jpg' },
+        { image: 'static/preview-meta.jpg' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'ModernAmusement by Shady Tawfik' },
         { name: 'twitter:description', content: 'Sharing skills in the area of web development. Blogs about the latest trends and greats. and much more.' },
