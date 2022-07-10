@@ -97,12 +97,10 @@ export default {
 }
 
 form {
-
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
-
 }
 
 .hyphens-auto {
