@@ -61,25 +61,25 @@ export default {
       default: () => [
         {
           link: '/',
-          name: 'Home',
+          name: '_home',
           icon: 'bx-home',
           class: '',
         },
         {
           link: '/blog',
-          name: 'Blog',
+          name: '_blog',
           icon: 'bx-edit',
           class: '',
         },
         {
           link: '/projects',
-          name: 'Projects',
+          name: '_projects',
           icon: 'bx-code',
           class: ''
         },
         {
           link: '/about',
-          name: 'About',
+          name: '_about',
           icon: 'bx-user',
           class: ''
         },
