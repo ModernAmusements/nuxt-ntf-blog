@@ -73,6 +73,10 @@ export default {
               <input class="" type="text" name="email" required />
             </p>
             <p>
+              <label class="block uppercase text-xs font-bold mb-2">Message:</label>
+              <textarea name="message"></textarea>
+            </p>
+            <p>
               <button class="btn" type="submit">Send</button>
             </p>
           </form>
@@ -95,7 +99,8 @@ export default {
 form {
 
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
   justify-content: flex-start;
 
 }
