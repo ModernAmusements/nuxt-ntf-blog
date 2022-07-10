@@ -41,7 +41,7 @@ export default {
             <span class="text-primary"> > fullstack web developer
             </span>
           </h1>
-          <p class="text-md">
+          <p class="text-sm md:text-base">
             // Code inclusive, effective, impactful products.
             <br />
             // Logical approach to problem solving is my passion.
@@ -55,39 +55,30 @@ export default {
             // Dynamic - Websites don't have to be static
             <br />
           </p>
-        </div>
-        <!-- Homepage Img -->
-        <img class="mt-8 md:mt-0 w-100" :src="HeroImg" alt="..." />
-      </div>
-      <div class="content-wrapper-center section-1">
-        <!-- Homepage Text -->
-        <div class="homepage-content-about text-start">
-          <h2 class="text-lg mb-0">You can expect</h2>
-          <h1 class="display break-normal hyphens-auto">
+          <p class="text-xs mb-5">
             A constructive and inclusive <span class="text-primary">blog</span> for <span class="text-primary">software
               developers</span>. With you every step of your <span class="text-primary">journey.</span>
-          </h1>
-          <p class="text-md mb-5">
             On this blog I share tips and tricks, frameworks, projects, tutorials, etc. Make sure you subscribe to get
             the latest updates
           </p>
           <form class="w-full" action="/success" name="contact" method="POST" netlify-honeypot="bot-field"
             data-netlify="true">
-            <p>
-              <label class="hidden">
-                Don’t fill this out if you’re human: <input name="bot-field" />
-              </label>
-            </p>
-            <p>
-            <div class="relative w-full mb-3 pr-0 pr-md-5">
+
+            <label class="hidden">
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+
+            <div class="relative pr-3">
               <label class="block uppercase text-xs font-bold mb-2">Email:</label>
               <input class="" type="text" name="email" required />
             </div>
-            </p>
             <button class="btn" type="submit">Send</button>
           </form>
         </div>
+        <!-- Homepage Img -->
+        <img class="mt-8 md:mt-0 w-100" :src="HeroImg" alt="..." />
       </div>
+
     </section>
   </main>
 </template>
@@ -99,11 +90,12 @@ export default {
   justify-content: center;
 }
 
-.content-wrapper-center {
+form {
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-start;
+
 }
 
 .hyphens-auto {
