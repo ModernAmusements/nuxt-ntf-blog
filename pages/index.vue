@@ -68,11 +68,9 @@ export default {
                 Don’t fill this out if you’re human: <input name="bot-field" />
               </label>
             </p>
-            <p>
-            <div class="relative pr-3">
+            <p class="relative pr-3">
               <label class="block uppercase text-xs font-bold mb-2">Email:</label>
               <input class="" type="text" name="email" required />
-            </div>
             </p>
             <p>
               <button class="btn" type="submit">Send</button>
