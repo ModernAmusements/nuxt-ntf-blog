@@ -63,16 +63,20 @@ export default {
           </p>
           <form class="w-full" action="/success" name="contact" method="POST" netlify-honeypot="bot-field"
             data-netlify="true">
-
-            <label class="hidden">
-              Don’t fill this out if you’re human: <input name="bot-field" />
-            </label>
-
+            <p>
+              <label class="hidden">
+                Don’t fill this out if you’re human: <input name="bot-field" />
+              </label>
+            </p>
+            <p>
             <div class="relative pr-3">
               <label class="block uppercase text-xs font-bold mb-2">Email:</label>
               <input class="" type="text" name="email" required />
             </div>
-            <button class="btn" type="submit">Send</button>
+            </p>
+            <p>
+              <button class="btn" type="submit">Send</button>
+            </p>
           </form>
         </div>
         <!-- Homepage Img -->

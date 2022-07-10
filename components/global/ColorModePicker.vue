@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed toggle bottom-0 m-3 z-50">
+  <div class="fixed toggle bottom-0 m-3 z-5000">
     <component :is="`icon-${color}`" @click="changeColorMode" @keypress.enter="changeColorMode"
       title="Toggle background color" tabindex="0" />
   </div>
@@ -79,6 +79,10 @@ export default {
   &.selected {
     color: var(--color-primary);
   }
+}
+
+.z-5000 {
+  z-index: 5000;
 }
 
 .light {

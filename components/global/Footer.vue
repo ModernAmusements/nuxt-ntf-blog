@@ -24,51 +24,49 @@ export default {
             <Social />
           </div>
         </div>
-        <div class="w-full lg:w-6/12 px-4">
+        <div class="lg:w-6/12">
           <div class="flex flex-wrap items-top mb-6">
-            <div class="w-full lg:w-4/12 px-4 ml-auto">
-              <span
-                class="block uppercase hover:text-primary-600 dark:text-primary-400 text-sm font-bold mb-2 underline">
-                Useful Links
-              </span>
-              <ul class="list-unstyled">
-                <li>
-                  <a class="hover:text-primary-600 dark:text-primary-400 font-semibold block pb-2 text-sm"
-                    href="https://developer.mozilla.org/en-US/">
-                    AMDN Web Docs
-                  </a>
-                </li>
-                <li>
-                  <a class="hover:text-primary-600 dark:text-primary-400 font-semibold block pb-2 text-sm"
-                    href="https://replit.com/">
-                    Replit
-                  </a>
-                </li>
-                <li>
-                  <a class="hover:text-primary-600 dark:text-primary-400 font-semibold block pb-2 text-sm"
-                    href="https://fonts.google.com/">
-                    Google Fonts
-                  </a>
-                </li>
-                <li>
-                  <a class="hover:text-primary-600 dark:text-primary-400 font-semibold block pb-2 text-sm"
-                    href="https://www.producthunt.com/">
-                    Producthunt
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="w-full lg:w-4/12 px-4">
-              <span
-                class="block uppercase hover:text-primary-600 dark:text-primary-400 text-sm font-bold mb-2 underline">
+            <div class="lg:w-4/12 pl-4">
+              <span class="block uppercase dark:text-primary-400 text-sm font-bold mb-2 underline">
                 Other Resources
               </span>
               <ul class="list-unstyled">
                 <li>
                   <nuxt-link to="/privacy"
                     class="hover:text-primary dark:text-primary-400 font-semibold block py-2 text-sm">
-                    Terms & Conditions =>
+                    Terms & Conditions
                   </nuxt-link>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full lg:w-4/12 pl-4 ml-auto">
+              <span class="block uppercase dark:text-primary-400 text-sm font-bold mb-2 underline">
+                Useful Links
+              </span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="hover:color-primary-800 dark:text-primary-400 font-semibold block pb-2 text-sm"
+                    href="https://developer.mozilla.org/en-US/">
+                    AMDN Web Docs
+                  </a>
+                </li>
+                <li>
+                  <a class="hover:color-primary-800 dark:text-primary-400 font-semibold block pb-2 text-sm"
+                    href="https://replit.com/">
+                    Replit
+                  </a>
+                </li>
+                <li>
+                  <a class="hover:color-primary-800 dark:text-primary-400 font-semibold block pb-2 text-sm"
+                    href="https://fonts.google.com/">
+                    Google Fonts
+                  </a>
+                </li>
+                <li>
+                  <a class="hover:color-primary-800 dark:text-primary-400 font-semibold block pb-2 text-sm"
+                    href="https://www.producthunt.com/">
+                    Producthunt
+                  </a>
                 </li>
               </ul>
             </div>
