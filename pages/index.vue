@@ -35,46 +35,56 @@ export default {
       <div class="content-wrapper">
         <!-- Homepage Text -->
         <div class="homepage-content-about text-start">
-          <h2 class="underline underline-offset-1 text-lg">Hello! I’m Shady</h2>
+          <h2 class="text-lg mb-0">Hi all. I am</h2>
           <h1 class="display">
-            I’m a <span class="text-primary">fullstack web developer</span> from Germany, Bielefeld.
+            Shady from Germany, Bielefeld.<br />
+            <span class="text-primary"> > fullstack web developer
+            </span>
           </h1>
           <p class="text-md">
-            Interested in programming and to code inclusive, effective, and impactful digital products. Logical approach
-            to problem solving is my passion. Code perfectionist in the best sense of the word.
+            // Code inclusive, effective, impactful products.
+            <br />
+            // Logical approach to problem solving is my passion.
+            <br />
+            // Code perfectionist in the best sense of the word.
+            <br />
+            // Intuitive - Strong perference for engaging UI
+            <br />
+            // Fast load times and lag free interaction
+            <br />
+            // Dynamic - Websites don't have to be static
+            <br />
           </p>
         </div>
         <!-- Homepage Img -->
         <img class="mt-8 md:mt-0 w-100" :src="HeroImg" alt="..." />
       </div>
-      <!-- Homepage Section 1 -->
-      <div class="content-wrapper section-1">
-        <img class="mt-8 md:mt-0" :src="blogIcon" alt="..." />
-        <div class="homepage-content-blog text-start">
-          <h3 class="underline underline-offset-1 text-lg">You can expect</h3>
-          <h4>
-            A constructive and inclusive blog for software developers. With you every step of your journey.
-          </h4>
+      <div class="content-wrapper-center section-1">
+        <!-- Homepage Text -->
+        <div class="homepage-content-about text-start">
+          <h2 class="text-lg mb-0">You can expect</h2>
+          <h1 class="display break-normal hyphens-auto">
+            A constructive and inclusive <span class="text-primary">blog</span> for <span class="text-primary">software
+              developers</span>. With you every step of your <span class="text-primary">journey.</span>
+          </h1>
           <p class="text-md mb-5">
             On this blog I share tips and tricks, frameworks, projects, tutorials, etc. Make sure you subscribe to get
             the latest updates
           </p>
           <form class="w-full" action="/success" name="contact" method="POST" netlify-honeypot="bot-field"
             data-netlify="true">
-            <p class="hidden">
-              <label>
+            <p>
+              <label class="hidden">
                 Don’t fill this out if you’re human: <input name="bot-field" />
               </label>
             </p>
             <p>
             <div class="relative w-full mb-3 pr-0 pr-md-5">
               <label class="block uppercase text-xs font-bold mb-2">Email:</label>
-              <input class="w-full" type="text" name="email" required />
+              <input class="" type="text" name="email" required />
             </div>
             </p>
-            <p>
-              <button class="btn w-full" type="submit">Send</button>
-            </p>
+            <button class="btn" type="submit">Send</button>
           </form>
         </div>
       </div>
@@ -89,10 +99,22 @@ export default {
   justify-content: center;
 }
 
+.content-wrapper-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hyphens-auto {
+  hyphens: auto;
+}
+
 img {
-  width: 100%;
+  width: 50%;
   height: auto;
   object-fit: cover;
+  max-width: fit-content;
 }
 
 input {
@@ -100,10 +122,16 @@ input {
 }
 
 @media (max-width: 1024px) {
-  .content-wrapper {
+
+  .content-wrapper,
+  .content-wrapper-center {
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 3rem;
+  }
+
+  img {
+    width: 100%;
   }
 
   .content-wrapper.section-1 img {
