@@ -6,6 +6,7 @@ import { COLOR_MODE_FALLBACK } from './utils/globals.js'
 export default {
   target: 'static',
   components: true,
+  ssr: false,
   generate: {
     fallback: true,
   },
