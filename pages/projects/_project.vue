@@ -21,17 +21,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      title: this.post.title,
-      content: this.post.description
-    }
-  },
   head() {
     return {
       title: this.post.title,
       meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: 'description',
           name: 'description',

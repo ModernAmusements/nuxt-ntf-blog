@@ -6,3 +6,15 @@ environment = { NODE_VERSION = "16.11.1", NPM_VERSION = "8.1.0" }
 # [[plugins]]
 # package = "netlify-plugin-subfont"
 
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+
+    #  Multi-value headers are expressed with multi-line strings
+	cache-control = '''
+	max-age=0,
+	no-cache,
+	no-store,
+	must-revalidate'''
