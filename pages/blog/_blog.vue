@@ -4,7 +4,6 @@
       <nav class="mb-8" aria-label="go back">
         <router-back class="block" />
       </nav>
-
       <article>
         <h5 v-if="post.createdAt"
           class="inline-block py-1 px-2 my-2 bg-primary text-white text-sm font-medium rounded-sm whitespace-no-wrap">{{
@@ -20,6 +19,18 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: this.post.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.post.description
+        }
+      ]
+    }
+  },
   async asyncData({ $content, params, error }) {
     let post;
     try {

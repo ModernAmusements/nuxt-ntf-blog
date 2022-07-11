@@ -4,17 +4,17 @@ import blogIcon from '@/assets/img/blog_icon.png'
 export default {
 	head() {
 		return {
-			title: "Succes => ModernAmusement",
+			title: "Success => ModernAmusement",
 			meta: [
 				{
 					name: 'og:description',
 					property: 'og:description',
-					content: 'Succes ModernAmusments. => Shady Tawfik Bielefeld',
+					content: 'Success => Shady Tawfik Bielefeld',
 				},
 				{
 					name: 'description',
 					property: 'description',
-					content: 'Succes ModernAmusments. => Shady Tawfik Bielefeld',
+					content: 'Success => Shady Tawfik Bielefeld',
 				},
 			]
 		};

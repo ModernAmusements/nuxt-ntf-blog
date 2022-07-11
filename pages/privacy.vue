@@ -1,5 +1,23 @@
 <script>
-
+export default {
+	head() {
+		return {
+			title: "Privacy => Shady Tawfik",
+			meta: [
+				{
+					name: 'og:description',
+					property: 'og:description',
+					content: 'Privacy =>> Shady Tawfik from Bielefeld Germany, Fullstack Delevoper',
+				},
+				{
+					name: 'description',
+					property: 'description',
+					content: 'Privacy =>> Shady Tawfik from Bielefeld Germany, Fullstack Delevoper',
+				},
+			]
+		};
+	},
+}
 
 </script>
 
@@ -31,6 +49,49 @@
 						services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above
 						terminology or other words in the singular, plural, capitalization and/or he/she or they, are
 						taken as interchangeable and therefore as referring to same.</p>
+					<p>
+						Modern Amusements <br />
+						Address: On Request<br />
+						Represented by: Shady Tawfik<br />
+						Email: modern-amusements@info.dev</p>
+					<br />
+					<br />
+					<strong>We are not willing or obliged to participate in dispute resolution proceedings before a
+						consumer arbitration board.</strong>
+				</div>
+			</div>
+			<div class="content-wrapper">
+				<div class="text-start">
+					<h2 class="underline underline-offset-1 text-lg">German copyright law</h2>
+					<h1>
+						Copyright
+					</h1>
+				</div>
+				<div class="text-start">
+					<p>The content and works created by the site operators on these pages are subject to German
+						copyright law. Duplication, processing, distribution, or any form of commercialization of such
+						material beyond the scope of the copyright law shall require the prior written consent of its
+						respective author or creator. Downloads and copies of this site are only permitted for private,
+						non-commercial use. Insofar as the content on this site was not created by the operator, the
+						copyrights of third parties are respected. In particular, third-party content is identified as
+						such. Should you nevertheless become aware of a copyright infringement, please inform us
+						accordingly. If we become aware of any infringements, we will remove such content immediately.
+					</p>
+				</div>
+			</div>
+			<div class="content-wrapper">
+				<div class="text-start">
+					<h2 class="underline underline-offset-1 text-lg">No Purpose of the processing</h2>
+					<h1>
+						European Data Protection Regulation
+					</h1>
+				</div>
+				<div class="text-start">
+					<p>We don´t process personal data in accordance with the provisions of the European Data Protection
+						Regulation (DSGVO) and the German Federal Data Protection Act (BDSG) for the following purposes:
+						(Article 4 No. 2 DSGVO)
+						(Art. 6 para. 1 p. 1 lit. f DSGVO)
+						(Art. 6 para. 1 p. 1 lit. a DSGVO)</p>
 				</div>
 			</div>
 			<div class="content-wrapper">
@@ -41,12 +102,9 @@
 					</h1>
 				</div>
 				<div class="text-start">
-					<p>We only employ the use of cookies. By accessing ModernAmusements, you agreed to use cookies in
-						agreement with the ModernAmusements's Privacy Policy.</p>
-
-					<p>Most interactive websites use cookies to enable the functionality of certain areas to make it
-						easier
-						for people visiting our website.</p>
+					<p>As a privacy advocate and abysmal hater of all data criminals like google and facebook, no
+						cookies and or personal data will be stored on this site let alone tracking. Therefore, I have
+						consciously no account on Facebook and Twitter and Google has lost nothing on this page.</p>
 				</div>
 			</div>
 			<div class="content-wrapper">
@@ -167,6 +225,44 @@
 					<p>No use of ModernAmusements's logo or other artwork will be allowed for linking absent a trademark
 						license agreement.</p>
 
+				</div>
+			</div>
+			<div class="content-wrapper">
+				<div class="text-start">
+					<h2 class="underline underline-offset-1 text-lg">Liability for contents</h2>
+					<h1>
+						Service Provider
+					</h1>
+				</div>
+				<div class="text-start">
+					<p>As a service provider, we are responsible for our own content on these pages in accordance with
+						general legislation pursuant to Section 7 (1) of the German Telemedia Act (TMG). According to §§
+						8 to 10 TMG, however, we are not obligated as a service provider to monitor transmitted or
+						stored third-party information or to investigate circumstances that indicate illegal activity.
+						Obligations to remove or block the use of information under the general laws remain unaffected.
+						However, liability in this regard is only possible from the point in time at which a concrete
+						infringement of the law becomes known. If we become aware of any such infringements, we will
+						remove the relevant content immediately.
+					</p>
+				</div>
+			</div>
+			<div class="content-wrapper">
+				<div class="text-start">
+					<h2 class="underline underline-offset-1 text-lg">Liability for Links</h2>
+					<h1>
+						Our offers:
+					</h1>
+				</div>
+				<div class="text-start">
+					<p>Our offer contains links to external websites of third parties, on whose contents we have no
+						influence. Therefore, we cannot assume any liability for these external contents. The respective
+						provider or operator of the pages is always responsible for the content of the linked pages. The
+						linked pages were checked for possible legal violations at the time of linking. Illegal contents
+						were not recognizable at the time of linking. However, a permanent control of the contents of
+						the linked pages is not reasonable without concrete evidence of a violation of the law. If we
+						become aware of any infringements, we will remove such links immediately.-
+
+					</p>
 				</div>
 			</div>
 		</section>
