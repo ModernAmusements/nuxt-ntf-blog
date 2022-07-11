@@ -139,6 +139,7 @@ export default {
       filename: 'preview',
     },
     manifest: { name: 'ModernAmusement by Shady Tawfik', lang: 'en-EN' },
+
     meta: [
       { property: 'og:site_name', content: 'ModernAmusement by Shady Tawfik' },
       { name: 'og-type', property: 'og:type', content: 'ModernAmusement by Shady Tawfik' },
