@@ -32,9 +32,13 @@ export default {
               </span>
               <ul class="list-unstyled">
                 <li>
-                  <nuxt-link to="/privacy"
-                    class="hover:text-primary dark:text-primary-400 font-semibold block py-2 text-sm">
-                    Terms & Conditions
+                  <nuxt-link to="/privacy" class="dark:text-primary-400 font-semibold block py-2 mb-2 text-sm">
+                    ==> Terms & Conditions
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/privacy" class="dark:text-primary-400 font-semibold block py-2 text-sm ">
+                    ==> Privacy
                   </nuxt-link>
                 </li>
               </ul>

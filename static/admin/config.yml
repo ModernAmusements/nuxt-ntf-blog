@@ -66,7 +66,12 @@ collections:
           name: 'category',
           widget: 'select',
           default: 'animals',
-          options: [{ label: 'VueJS', value: 'vuejs' }, { label: 'CSS3', value: 'css3' }],
+          options:
+            [
+              { label: 'VueJS', value: 'vuejs' },
+              { label: 'CSS3', value: 'css3' },
+              { label: 'jQuery', value: 'jquery' },
+            ],
         }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
