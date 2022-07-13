@@ -174,7 +174,7 @@
     & kbd,
     & samp {
       color: var(--text);
-      background-color: var(--color-primary-900);
+      background-color: transparent;
       @apply p-1 rounded transition-colors duration-200 ease-in-out;
     }
 
@@ -182,12 +182,10 @@
       @apply relative my-4;
       & > .filename {
         color: var(--text-secondary);
-        text-shadow: 0 1px rgba(255, 255, 255, 0.5);
         @apply absolute right-0 top-0 z-10 font-mono text-sm leading-5 mr-3 mt-2;
       }
       & pre[class*='language-'] {
-        background-color: var(--color-primary-900);
-        text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+        background-color: transparent;
         @apply p-4 rounded transition-colors duration-200 ease-in-out;
       }
       & .token.operator {
