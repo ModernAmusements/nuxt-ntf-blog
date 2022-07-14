@@ -1,31 +1,31 @@
 <script>
-import HeroImg from '@/assets/img/homepage-section-1.svg'
-import blogIcon from '@/assets/img/ma-homepage-form-section-2.svg'
+import HeroImg from "@/assets/img/homepage-section-1.svg";
+import blogIcon from "@/assets/img/ma-homepage-form-section-2.svg";
 export default {
   head() {
     return {
       title: "ModernAmusement => Shady Tawfik",
       meta: [
         {
-          name: 'og:description',
-          property: 'og:description',
-          content: 'ModernAmusement Homepage => Shady Tawfik Bielefeld',
+          name: "og:description",
+          property: "og:description",
+          content: "ModernAmusement Homepage => Shady Tawfik Bielefeld",
         },
         {
-          name: 'description',
-          property: 'description',
-          content: 'ModernAmusement Homepage => Shady Tawfik Bielefeld',
+          name: "description",
+          property: "description",
+          content: "ModernAmusement Homepage => Shady Tawfik Bielefeld",
         },
-      ]
+      ],
     };
   },
   data() {
     return {
       HeroImg,
-      blogIcon
-    }
+      blogIcon,
+    };
   },
-}
+};
 </script>
 
 <template>
@@ -38,8 +38,7 @@ export default {
           <h2 class="text-lg mb-0">Hi all. I am</h2>
           <h1 class="display">
             Shady from Germany, Bielefeld.<br />
-            <span class="text-primary"> > fullstack web developer
-            </span>
+            <span class="text-primary"> > fullstack web developer </span>
           </h1>
           <p class="text-sm md:text-base">
             // Code inclusive, effective, impactful products.
@@ -56,13 +55,20 @@ export default {
             <br />
           </p>
           <p class="text-xs mb-5">
-            A constructive and inclusive <span class="text-primary">blog</span> for <span class="text-primary">software
-              developers</span>. With you every step of your <span class="text-primary">journey.</span>
-            On this blog I share tips and tricks, frameworks, projects, tutorials, etc. Make sure you subscribe to get
-            the latest updates
+            A constructive and inclusive <span class="text-primary">blog</span> for
+            <span class="text-primary">software developers</span>. With you every step of
+            your <span class="text-primary">journey.</span>
+            On this blog I share tips and tricks, frameworks, projects, tutorials, etc.
+            Make sure you subscribe to get the latest updates
           </p>
-          <form class="w-full" action="/success" name="contact" method="POST" netlify-honeypot="bot-field"
-            data-netlify="true">
+          <form
+            class="w-full"
+            action="/success"
+            name="contact"
+            method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
             <p>
               <label class="hidden">
                 Don’t fill this out if you’re human: <input name="bot-field" />
@@ -84,7 +90,6 @@ export default {
         <!-- Homepage Img -->
         <img class="mt-8 md:mt-0 w-100" :src="HeroImg" alt="..." />
       </div>
-
     </section>
   </main>
 </template>
@@ -119,7 +124,6 @@ input {
 }
 
 @media (max-width: 1024px) {
-
   .content-wrapper,
   .content-wrapper-center {
     flex-direction: column;
@@ -132,7 +136,7 @@ input {
   }
 
   .content-wrapper.section-1 img {
-    order: 2
+    order: 2;
   }
 }
 </style>
