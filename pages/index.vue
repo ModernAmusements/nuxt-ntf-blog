@@ -1,5 +1,5 @@
 <script>
-import HeroImg from "@/assets/img/homepage-section-1.svg";
+import HeroImg from "@/assets/img/ma-hero.svg";
 import blogIcon from "@/assets/img/ma-homepage-form-section-2.svg";
 export default {
   head() {
@@ -74,6 +74,10 @@ export default {
                 Don’t fill this out if you’re human: <input name="bot-field" />
               </label>
             </p>
+            <p>
+              <label class="block uppercase text-xs font-bold mb-2">Name: </label>
+              <input type="text" name="name" />
+            </p>
             <p class="relative pr-3">
               <label class="block uppercase text-xs font-bold mb-2">Email:</label>
               <input class="" type="text" name="email" required />
@@ -99,6 +103,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.homepage-content-about {
+  max-width: 750px;
 }
 
 form {
