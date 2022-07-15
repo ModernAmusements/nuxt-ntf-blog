@@ -74,15 +74,17 @@ export default {
                 Don’t fill this out if you’re human: <input name="bot-field" />
               </label>
             </p>
-            <p>
-              <label class="block uppercase text-xs font-bold mb-2">Name: </label>
-              <input type="text" name="name" />
-            </p>
-            <p class="relative pr-3">
-              <label class="block uppercase text-xs font-bold mb-2">Email:</label>
-              <input class="" type="text" name="email" required />
-            </p>
-            <p>
+            <div class="flex flex-col md:flex-row items-center">
+              <p class="">
+                <label class="block uppercase text-xs font-bold mb-2">Name: </label>
+                <input type="text" name="name" />
+              </p>
+              <p class="m-0 pl-0 md:pl-5">
+                <label class="block uppercase text-xs font-bold mb-2">Email:</label>
+                <input type="text" name="email" required />
+              </p>
+            </div>
+            <p class="mt-5">
               <label class="block uppercase text-xs font-bold mb-2">Message:</label>
               <textarea name="message"></textarea>
             </p>
@@ -94,6 +96,10 @@ export default {
         <!-- Homepage Img -->
         <img class="mt-8 md:mt-0 w-100" :src="HeroImg" alt="..." />
       </div>
+    </section>
+    <section class="mt-8">
+      <h3 class="text-primary-600 dark:text-primary-400">Latest blog post</h3>
+      <posts post-type="blog" :amount="3" />
     </section>
   </main>
 </template>
