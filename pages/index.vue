@@ -1,6 +1,7 @@
 <script>
 import HeroImg from "@/assets/img/ma-hero.svg";
 import blogIcon from "@/assets/img/ma-homepage-form-section-2.svg";
+import MouseMove from "../components/global/MouseMove.vue";
 export default {
   head() {
     return {
@@ -25,6 +26,7 @@ export default {
       blogIcon,
     };
   },
+  components: { MouseMove },
 };
 </script>
 
@@ -94,7 +96,8 @@ export default {
           </form>
         </div>
         <!-- Homepage Img -->
-        <img class="mt-8 md:mt-0 w-100" :src="HeroImg" alt="..." />
+        <!-- <img class="mt-8 md:mt-0 w-100" :src="HeroImg" alt="..." /> -->
+        <MouseMove />
       </div>
     </section>
     <section class="mt-8">
