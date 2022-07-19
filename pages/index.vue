@@ -37,59 +37,59 @@ export default {
       ],
     };
   },
-  methods: {
-    mousemove(e) {
-      let mouseX = e.clientX;
-      let mouseY = e.clientY;
+  // methods: {
+  //   mousemove(e) {
+  //     let mouseX = e.clientX;
+  //     let mouseY = e.clientY;
 
-      let parallax = document.querySelectorAll(".parallax .parallaxItem");
+  //     let parallax = document.querySelectorAll(".parallax .parallaxItem");
 
-      for (let i = 0; i < parallax.length; i++) {
-        let para = parallax[i];
-        // Img wrap 1
-        let para_image = para.querySelector(".parallax-image-wrap");
-        // Img wrap 1
-        let img_x = mouseX - this.coords(para_image).x;
-        let img_y = mouseY - this.coords(para_image).y;
-        para_image.style.transform = `translateY(-${img_y / 20}px) translateX(-${
-          img_x / 20
-        }px) translateX(140px) translateZ(100px)`;
-        // Img wrap 2
-        let para_image_2 = para.querySelector(".parallax-image-wrap-1");
-        // Img wrap 2
-        let img_2_x = mouseX - this.coords(para_image_2).x;
-        let img_2_y = mouseY - this.coords(para_image_2).y;
-        para_image_2.style.transform = `translateY(-${img_2_y / 20}px) translateX(-${
-          img_2_x / 20
-        }px) translateZ(200px)`;
-        // Img wrap 3
-        let para_image_3 = para.querySelector(".parallax-image-wrap-2");
-        // Img wrap 3
-        let img_3_x = mouseX - this.coords(para_image_3).x;
-        let img_3_y = mouseY - this.coords(para_image_3).y;
-        para_image_3.style.transform = `translateY(-${img_3_y / 20}px) translateX(-${
-          img_3_x / 20
-        }px) translateX(-140px) translateZ(300px)`;
-        // Img wrap 3
-        let para_image_4 = para.querySelector(".parallax-image-wrap-3");
-        // Img wrap3
-        let img_4_x = mouseX - this.coords(para_image_4).x;
-        let img_4_y = mouseY - this.coords(para_image_4).y;
-        para_image_4.style.transform = `translateY(-${img_4_y / 20}px) translateX(-${
-          img_4_x / 20
-        }px) translateX(45px) translateZ(400px)`;
-      }
-    },
-    coords(el) {
-      let coords = el.getBoundingClientRect();
+  //     for (let i = 0; i < parallax.length; i++) {
+  //       let para = parallax[i];
+  //       // Img wrap 1
+  //       let para_image = para.querySelector(".parallax-image-wrap");
+  //       // Img wrap 1
+  //       let img_x = mouseX - this.coords(para_image).x;
+  //       let img_y = mouseY - this.coords(para_image).y;
+  //       para_image.style.transform = `translateY(-${img_y / 20}px) translateX(-${
+  //         img_x / 20
+  //       }px) translateX(140px) translateZ(100px)`;
+  //       // Img wrap 2
+  //       let para_image_2 = para.querySelector(".parallax-image-wrap-1");
+  //       // Img wrap 2
+  //       let img_2_x = mouseX - this.coords(para_image_2).x;
+  //       let img_2_y = mouseY - this.coords(para_image_2).y;
+  //       para_image_2.style.transform = `translateY(-${img_2_y / 20}px) translateX(-${
+  //         img_2_x / 20
+  //       }px) translateZ(200px)`;
+  //       // Img wrap 3
+  //       let para_image_3 = para.querySelector(".parallax-image-wrap-2");
+  //       // Img wrap 3
+  //       let img_3_x = mouseX - this.coords(para_image_3).x;
+  //       let img_3_y = mouseY - this.coords(para_image_3).y;
+  //       para_image_3.style.transform = `translateY(-${img_3_y / 20}px) translateX(-${
+  //         img_3_x / 20
+  //       }px) translateX(-140px) translateZ(300px)`;
+  //       // Img wrap 3
+  //       let para_image_4 = para.querySelector(".parallax-image-wrap-3");
+  //       // Img wrap3
+  //       let img_4_x = mouseX - this.coords(para_image_4).x;
+  //       let img_4_y = mouseY - this.coords(para_image_4).y;
+  //       para_image_4.style.transform = `translateY(-${img_4_y / 20}px) translateX(-${
+  //         img_4_x / 20
+  //       }px) translateX(45px) translateZ(400px)`;
+  //     }
+  //   },
+  //   coords(el) {
+  //     let coords = el.getBoundingClientRect();
 
-      // It's getting the coordinates of the element and dividing it by 2.
-      return {
-        x: coords.left,
-        y: coords.top,
-      };
-    },
-  },
+  //     // It's getting the coordinates of the element and dividing it by 2.
+  //     return {
+  //       x: coords.left,
+  //       y: coords.top,
+  //     };
+  //   },
+  // },
 };
 </script>
 
@@ -160,7 +160,8 @@ export default {
         </div>
         <!-- Homepage Img -->
         <!-- <img class="mt-8 md:mt-0 w-100" :src="HeroImg" alt="..." /> -->
-        <div @mousemove="mousemove">
+        <!-- <div @mousemove="mousemove"> -->
+        <div>
           <section class="parallax">
             <Parallax
               v-for="parallax in parallaxItems"
@@ -225,14 +226,9 @@ input {
   .homepage-content-about {
     max-width: 540px;
   }
-
-  .parallax {
-    width: 540px;
-    padding: 2rem;
-  }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .content-wrapper,
   .content-wrapper-center {
     flex-direction: column;
@@ -241,27 +237,12 @@ input {
   }
 
   .parallax {
-    width: 100%;
-  }
-
-  .parallax-image-wrap {
-    transform: scale(0.9) translateX(75px) translateY(-80px) !important;
-    transition-timing-function: ease;
-  }
-
-  .parallax-image-wrap-1 {
-    transform: scale(1.5) translateX(0px) !important;
-    transition-timing-function: ease;
-  }
-
-  .parallax-image-wrap-2 {
-    transform: scale(0.9) translateX(-105px) !important;
-    transition-timing-function: ease;
-  }
-
-  .parallax-image-wrap-3 {
-    transform: scale(0.9) translateX(40px) translateY(175px) !important;
-    transition-timing-function: ease;
+    display: flex;
+    max-width: 1280px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   img {

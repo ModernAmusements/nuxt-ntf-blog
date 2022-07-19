@@ -1,7 +1,7 @@
 <template>
   <div class="parallaxItem">
     <div class="parallaxItem-inner">
-      <div class="parallax-image-wrap">
+      <div class="parallax-image-wrap parallax-image-wrap-0">
         <img :src="parallax.layerOne" class="image" />
       </div>
       <div class="parallax-image-wrap parallax-image-wrap-1">
@@ -37,6 +37,7 @@ export default {
   perspective: 200rem;
   place-items: center;
   place-self: center;
+  /* transform: rotateY(340deg) rotateX(0deg); */
 }
 
 .parallax-image-wrap {
@@ -47,14 +48,26 @@ export default {
   pointer-events: none;
   position: relative;
   transform-style: preserve-3d;
-  transform: translateX(140px), translateZ(100px);
 }
 
-.parallax-image-wrap,
-.parallax-image-wrap-1,
-.parallax-image-wrap-2,
+.parallax-image-wrap-0 {
+  transform: translateX(130px) translateY(-50px) !important;
+  transition-timing-function: ease;
+}
+
+.parallax-image-wrap-1 {
+  transform: translateX(0px) !important;
+  transition-timing-function: ease;
+}
+
+.parallax-image-wrap-2 {
+  transform: translateX(-105px) !important;
+  transition-timing-function: ease;
+}
+
 .parallax-image-wrap-3 {
-  transition: transform 500ms ease-in-out 25ms;
+  transform: translateX(40px) translateY(175px) !important;
+  transition-timing-function: ease;
 }
 
 .parallax-image-wrap .image {
@@ -67,34 +80,9 @@ export default {
 
 @media (max-width: 1220px) {
   .parallax {
-    width: 540px;
-    padding: 2rem;
   }
 }
 
 @media (max-width: 1024px) {
-  .parallax {
-    width: 100%;
-  }
-
-  .parallax-image-wrap {
-    transform: scale(0.9) translateX(75px) translateY(-80px) !important;
-    transition-timing-function: ease;
-  }
-
-  .parallax-image-wrap-1 {
-    transform: scale(1.5) translateX(0px) !important;
-    transition-timing-function: ease;
-  }
-
-  .parallax-image-wrap-2 {
-    transform: scale(0.9) translateX(-105px) !important;
-    transition-timing-function: ease;
-  }
-
-  .parallax-image-wrap-3 {
-    transform: scale(0.9) translateX(40px) translateY(175px) !important;
-    transition-timing-function: ease;
-  }
 }
 </style>
