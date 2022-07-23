@@ -18,8 +18,7 @@ We can use the v-for directive to render a list of elements based on an array. O
 ```
 <nuxt-Link :to="menuItem.Link">
 ```
-
- ist die syntax von nuxt und wird als <a> tag gerendert :to steht für href="".
+ist die syntax von nuxt und wird als <a> tag gerendert :to steht für href="".
 
 ![Vue3 Code](/img/code-2.png "Vue3 Code")
 
