@@ -15,7 +15,8 @@ export default {
         {
           name: "description",
           property: "description",
-          content: "ModernAmusement Homepage => Shady Tawfik Bielefeld",
+          content:
+            "ModernAmusement Homepage => Shady Tawfik Bielefeld,creative fullstack web developer Code, 7 years of professional work experience.",
         },
       ],
     };
@@ -100,23 +101,23 @@ export default {
       <div class="content-wrapper">
         <!-- Homepage Text -->
         <div class="homepage-content-about text-start">
-          <h2 class="text-lg mb-0">Hi all. I am</h2>
+          <h2 class="text-lg mb-0 hidden sm:block">Hi all. I am</h2>
           <h1 class="display">
-            Shady from Germany, Bielefeld.<br />
-            <span class="text-primary"> > fullstack web developer </span>
+            <span class="hidden sm:block">Shady from Germany, Bielefeld.</span><br />
+            <span class="text-primary"> >creative fullstack web developer </span>
           </h1>
           <p class="text-sm md:text-base">
-            // Code inclusive, effective, impactful products.
+            // 7 years of professional work experience.
             <br />
             // Logical approach to problem solving is my passion.
             <br />
             // Code perfectionist in the best sense of the word.
             <br />
-            // Intuitive - Strong perference for engaging UI
+            // Intuitive - Strong perference for engaging UI.
             <br />
-            // Fast load times and lag free interaction
+            // Code inclusive, effective, impactful products.
             <br />
-            // Dynamic - Websites don't have to be static
+            // Dynamic - Websites don't have to be static.
             <br />
           </p>
           <p class="text-xs mb-5">
@@ -161,7 +162,10 @@ export default {
         <!-- Homepage Img -->
         <!-- <img class="mt-8 md:mt-0 w-100" :src="HeroImg" alt="..." /> -->
         <!-- <div @mousemove="mousemove"> -->
-        <div>
+        <div class="w-full">
+          <h1 class="text-xl display mb-0 block sm:hidden">
+            Hi all. I am Shady from Germany, Bielefeld.
+          </h1>
           <section class="parallax">
             <Parallax
               v-for="parallax in parallaxItems"
@@ -224,11 +228,16 @@ input {
 
 @media (max-width: 1220px) {
   .homepage-content-about {
-    max-width: 540px;
+    max-width: 480px;
   }
 }
 
 @media (max-width: 768px) {
+  .homepage-content-about {
+    max-width: 680px;
+    order: 1;
+  }
+
   .content-wrapper,
   .content-wrapper-center {
     flex-direction: column;
@@ -243,14 +252,11 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: scale(0.8) translate(-22px, 0px);
   }
 
   img {
     width: 100%;
-  }
-
-  .content-wrapper.section-1 img {
-    order: 2;
   }
 }
 </style>

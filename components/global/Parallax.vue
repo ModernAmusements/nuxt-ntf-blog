@@ -25,6 +25,46 @@ export default {
 </script>
 
 <style>
+@keyframes wrap-0 {
+  from {
+    transform: translateX(-50px) translateY(-50px);
+  }
+
+  to {
+    transform: translateX(130px) translateY(-50px);
+  }
+}
+
+@keyframes wrap-1 {
+  from {
+    transform: translateX(0px) translateZ(-1000px);
+  }
+
+  to {
+    transform: translateX(0px) translateZ(0px);
+  }
+}
+
+@keyframes wrap-2 {
+  from {
+    transform: translateX(-25px);
+  }
+
+  to {
+    transform: translateX(-105px);
+  }
+}
+
+@keyframes wrap-3 {
+  from {
+    transform: translateX(40px) translateY(225px);
+  }
+
+  to {
+    transform: translateX(40px) translateY(175px);
+  }
+}
+
 .parallaxItem {
   display: block;
 }
@@ -51,23 +91,39 @@ export default {
 }
 
 .parallax-image-wrap-0 {
-  transform: translateX(130px) translateY(-50px) !important;
-  transition-timing-function: ease;
+  transform: translateX(130px) translateY(-50px);
+  transition-timing-function: cubic-bezier(0.29, 1.01, 1, -0.68);
+  animation-duration: 1s;
+  animation-name: wrap-0;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 }
 
 .parallax-image-wrap-1 {
-  transform: translateX(0px) !important;
-  transition-timing-function: ease;
+  transform: translateX(0px) translateZ(0px);
+  transition-timing-function: cubic-bezier(0.29, 1.01, 1, -0.68);
+  animation-duration: 1s;
+  animation-name: wrap-1;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 }
 
 .parallax-image-wrap-2 {
-  transform: translateX(-105px) !important;
-  transition-timing-function: ease;
+  transform: translateX(-105px);
+  transition-timing-function: cubic-bezier(0.29, 1.01, 1, -0.68);
+  animation-duration: 1s;
+  animation-name: wrap-2;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 }
 
 .parallax-image-wrap-3 {
-  transform: translateX(40px) translateY(175px) !important;
-  transition-timing-function: ease;
+  transform: translateX(40px) translateY(175px);
+  transition-timing-function: cubic-bezier(0.29, 1.01, 1, -0.68);
+  animation-duration: 1s;
+  animation-name: wrap-3;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 }
 
 .parallax-image-wrap .image {
@@ -76,11 +132,6 @@ export default {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 100%;
-}
-
-@media (max-width: 1220px) {
-  .parallax {
-  }
 }
 
 @media (max-width: 1024px) {
