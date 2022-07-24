@@ -1,9 +1,10 @@
 <script>
+import Modal from "./navbar/Modal.vue";
 export default {
   name: "Header",
+  components: { Modal },
 };
 </script>
-
 
 <template>
   <nav class="scrim-bg fixed z-40 top-0 inset-x-0 py-3 px-3" aria-label="Main Menu">
@@ -12,14 +13,11 @@ export default {
     </div>
     <SidebarMenu />
     <section>
-      <a class="btn block mr-1 md:mr-2" href="mailto:shadynathantawfik@gmail.com">
-        <span class="hidden md:inline-block">Get in</span> Contact
-      </a>
+      <Modal />
       <Social />
     </section>
   </nav>
 </template>
-
 
 <style lang="postcss" scoped>
 nav {
@@ -94,7 +92,15 @@ section {
   &.nav {
     border-bottom: 1px solid var(--color-gray-400);
   }
+}
 
+.modal {
+  top: 438%;
+  right: -60%;
+}
+
+.modal-form {
+  padding: 2rem;
 }
 
 /* Need two because of smoother switching between color modes */

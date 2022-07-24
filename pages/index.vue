@@ -2,6 +2,7 @@
 import HeroImg from "@/assets/img/ma-hero.svg";
 import blogIcon from "@/assets/img/ma-homepage-form-section-2.svg";
 import Parallax from "/components/global/Parallax";
+import Modal from "~/components/global/navbar/Modal.vue";
 export default {
   head() {
     return {
@@ -23,6 +24,7 @@ export default {
   },
   components: {
     Parallax,
+    Modal,
   },
   data() {
     return {
@@ -127,37 +129,7 @@ export default {
             On this blog I share tips and tricks, frameworks, projects, tutorials, etc.
             Make sure you subscribe to get the latest updates
           </p>
-          <form
-            class="w-full"
-            action="/success"
-            name="contact"
-            method="POST"
-            netlify-honeypot="bot-field"
-            data-netlify="true"
-          >
-            <p>
-              <label class="hidden">
-                Don’t fill this out if you’re human: <input name="bot-field" />
-              </label>
-            </p>
-            <div class="flex flex-col md:flex-row items-center">
-              <p class="">
-                <label class="block uppercase text-xs font-bold mb-2">Name: </label>
-                <input class="mb-2 md:mb-0" type="text" name="name" />
-              </p>
-              <p class="m-0 pl-0 md:pl-5">
-                <label class="block uppercase text-xs font-bold mb-2">Email:</label>
-                <input type="text" name="email" required />
-              </p>
-            </div>
-            <p class="mt-5">
-              <label class="block uppercase text-xs font-bold mb-2">Message:</label>
-              <textarea name="message"></textarea>
-            </p>
-            <p>
-              <button class="btn" type="submit">Send</button>
-            </p>
-          </form>
+          <Modal />
         </div>
         <!-- Homepage Img -->
         <!-- <img class="mt-8 md:mt-0 w-100" :src="HeroImg" alt="..." /> -->
@@ -257,6 +229,15 @@ input {
 
   img {
     width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .modal {
+    left: -9px;
+    top: 86px;
+    width: 100vw;
+    height: 100vh;
   }
 }
 </style>
