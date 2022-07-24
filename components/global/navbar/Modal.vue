@@ -78,7 +78,7 @@ export default {
   },
 };
 </script>
-<style lang="postcss">
+<style lang="postcss" scoped>
 .modal-form {
   background-color: var(--bg-body);
 }

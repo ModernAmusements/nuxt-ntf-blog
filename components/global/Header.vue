@@ -94,15 +94,6 @@ section {
   }
 }
 
-.modal {
-  top: 438%;
-  right: -60%;
-}
-
-.modal-form {
-  padding: 2rem;
-}
-
 /* Need two because of smoother switching between color modes */
 @keyframes fadeIn1 {
   from {

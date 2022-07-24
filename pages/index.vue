@@ -105,7 +105,7 @@ export default {
         <div class="homepage-content-about text-start">
           <h2 class="text-lg mb-0 hidden sm:block">Hi all. I am</h2>
           <h1 class="display">
-            <span class="hidden sm:block">Shady from Germany, Bielefeld.</span><br />
+            <span class="hidden sm:block">Shady from Germany, Bielefeld.</span>
             <span class="text-primary"> >creative fullstack web developer </span>
           </h1>
           <p class="text-sm md:text-base">
@@ -155,7 +155,7 @@ export default {
   </main>
 </template>
 
-<style scoped>
+<style>
 .content-wrapper {
   display: flex;
   align-items: center;
@@ -229,15 +229,6 @@ input {
 
   img {
     width: 100%;
-  }
-}
-
-@media (max-width: 425px) {
-  .modal {
-    left: -9px;
-    top: 86px;
-    width: 100vw;
-    height: 100vh;
   }
 }
 </style>
