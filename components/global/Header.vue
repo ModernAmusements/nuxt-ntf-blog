@@ -1,8 +1,8 @@
 <script>
-import Modal from "./navbar/Modal.vue";
+import ModalHeader from "./navbar/ModalHeader.vue";
 export default {
   name: "Header",
-  components: { Modal },
+  components: { ModalHeader },
 };
 </script>
 
@@ -13,7 +13,7 @@ export default {
     </div>
     <SidebarMenu />
     <section>
-      <Modal />
+      <ModalHeader />
       <Social />
     </section>
   </nav>
@@ -37,7 +37,7 @@ li.flex-1 {
 }
 
 .nuxt-link-exact-active {
-  @apply font-bold cursor-default;
+  @apply text-primary font-bold cursor-default;
 }
 
 section {
@@ -73,7 +73,7 @@ section {
 }
 
 .nuxt-link-exact-active {
-  @apply font-bold cursor-default;
+  @apply text-primary font-bold cursor-default;
 }
 
 .light {
@@ -86,7 +86,7 @@ section {
   }
 
   &.nuxt-link-exact-active {
-    @apply border-gray-600 bg-gray-100;
+    @apply text-primary-700 border-gray-600 bg-gray-100;
   }
 
   &.nav {

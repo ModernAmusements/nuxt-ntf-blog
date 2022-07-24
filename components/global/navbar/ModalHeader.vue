@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="isOpen = true" class="btn hidden md:block" type="button">
+    <button @click="isOpen = true" class="btn block" type="button">
       <span class="hidden md:inline-block">Get in</span> Contact
     </button>
     <div class="container">
@@ -8,7 +8,7 @@
         <!-- Modal -->
         <div
           v-show="isOpen"
-          class="pl-20 modal absolute inset-0 flex items-start justify-start xs:items-center xs:justify-center z-20"
+          class="modal flex items-start justify-start xs:items-center xs:justify-center z-20"
         >
           <div class="modal-form rounded-md">
             <div class="flex items-center justify-between">
@@ -79,35 +79,34 @@ export default {
 };
 </script>
 <style lang="postcss" scoped>
-@keyframes slind-in-modal-left {
+@keyframes slind-in-modal {
   from {
-    transform: translateX(-2000px);
+    transform: translateY(-250px);
   }
 
   to {
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
-}
-
-.modal-form {
-  background-color: var(--bg-body);
 }
 
 .modal {
   background-color: var(--bg-body);
-  transform: translateX(0px);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  padding: 1rem;
+  inset: 0;
+  margin-left: 3rem;
+  transform: translateY(0px);
   transition-timing-function: cubic-bezier(0.29, 1.01, 1, -0.68);
   animation-duration: 1s;
-  animation-name: slind-in-modal-left;
+  animation-name: slind-in-modal;
   animation-iteration-count: 1;
   animation-direction: alternate;
-  border-right: 1px solid var(--text);
+  border-bottom: 1px solid var(--text);
 }
 
-@media (max-width: 425px) {
-  .modal {
-    left: 57px;
-    top: 86px;
-  }
+.modal-form {
+  background-color: var(--bg-body);
 }
 </style>
